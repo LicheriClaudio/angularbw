@@ -35,6 +35,15 @@
       "lastname": "Snow",
       "role": "",
       "id": 4
+    },
+    {
+      "email": "paoloniluca@gmail.com",
+      "password": "$2a$10$Q7dJY.t9Tbm0SvdRbpUFUehJaYrPM3oYgM5p6aluPjLzen0piy/6G",
+      "username": "",
+      "firstname": "Luca",
+      "lastname": "Paoloni",
+      "role": "user",
+      "id": 5
     }
   ],
   "fatture": [],
