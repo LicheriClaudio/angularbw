@@ -23,7 +23,7 @@ export class LoginPage implements OnInit {
   ngOnInit(): void {
     console.log('ngoninit funziona');
 
-    /* this.Serviceservice.authSubject.subscribe((val) => console.log(val?.users)); */
+    this.Serviceservice.authSubject.subscribe((val) => console.log(val?.user));
     this.Serviceservice.authSubject.subscribe((val) => {
       this.use = `${val?.user.firstname}-${val?.user.lastname} `;
     });
