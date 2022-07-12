@@ -11,14 +11,11 @@ export class GuardGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
-  ):
-    | Observable<boolean | UrlTree>
-    | Promise<boolean | UrlTree>
-    | boolean
-    | UrlTree {
-   /*  return true; */return this.Serviceservice.authSubject.pipe(
+  ):| Observable<boolean | UrlTree>| Promise<boolean | UrlTree>| boolean| UrlTree {
+   /*  return true; */
+   return this.Serviceservice.authSubject.pipe(
       map((user) => !!user),
-      map((userBool) => {
+      map(userBool => {
         if (userBool) {
           return true;
         }

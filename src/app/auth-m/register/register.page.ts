@@ -52,7 +52,7 @@ export class RegisterPage implements OnInit {
         this.error = undefined;
         this.router.navigate(['/login']);
       },
-      (err) => {
+      err => {
         console.log(err.error);
         this.error = err.error;
       }
