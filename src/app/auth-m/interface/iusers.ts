@@ -1,6 +1,6 @@
 export interface Iusers {
   AccessToken: string;
-  users: {
+  user: {
     username: any;
     email: any;
     firstname: string;
