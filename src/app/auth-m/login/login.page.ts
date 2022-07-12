@@ -15,6 +15,7 @@ export class LoginPage implements OnInit {
 
   json = localStorage.getItem('isAuthenticated');
   users: Iusers[] = [];
+  user:Ireg[] = []
   use = '';
   @ViewChild('f') form!: NgForm;
   constructor(private Serviceservice: ServiceService, private router: Router) {}
@@ -22,18 +23,18 @@ export class LoginPage implements OnInit {
   ngOnInit(): void {
     console.log('ngoninit funziona');
 
-    this.Serviceservice.authSubject.subscribe((val) => console.log(val?.users));
+    /* this.Serviceservice.authSubject.subscribe((val) => console.log(val?.users)); */
     this.Serviceservice.authSubject.subscribe((val) => {
-      this.use = `${val?.users.firstname}-${val?.users.lastname}ciao `;
+      this.use = `${val?.user.firstname}-${val?.user.lastname} `;
     });
   }
-  onSubmit() {
+  /* onSubmit() {
     console.log(this.form.value);
-  }
+  } */
 
   invia() {
-    console.log(this.local);
-    console.log(this.form.value);
+    /* console.log(this.local);
+    console.log(this.form.value); */
     this.Serviceservice.login(this.form.value).subscribe(
       (resp) => {
         console.log(resp);
