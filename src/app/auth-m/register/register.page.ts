@@ -22,12 +22,12 @@ export class RegisterPage implements OnInit {
    invia() {
     //console.log(this.form.value)
     this.Serviceservice.signup(this.form.value).subscribe(
-      (resp) => {
+      resp => {
         console.log(resp);
         this.error = undefined;
         this.router.navigate(['/login']);
       },
-      (err) => {
+      err => {
         console.log(err.error);
         this.error = err.error;
       }

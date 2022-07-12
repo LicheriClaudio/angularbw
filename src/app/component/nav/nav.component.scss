@@ -31,6 +31,7 @@ margin-left: 1.2rem;
 a{
   text-transform: uppercase;
   text-decoration: none;
+  color: white;
 
 }
 
@@ -42,3 +43,18 @@ a:visited {
 div{
   margin-top: 3rem;
 }
+
+ .ciao1 {
+   text-align: center;
+  width:20rem;
+  margin-left: 0 auto;
+  align-items: center;
+}
+
+mat-card.ciao1 {
+  text-align: center;
+  width:20rem;
+  margin-left: 0 auto;
+
+}
+
