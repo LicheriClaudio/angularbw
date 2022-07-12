@@ -1,10 +1,10 @@
 export interface Iusers {
   AccessToken: string;
   users: {
-    username: string;
-    email: string;
-    nome: string;
-    cognome: string;
+    username: any;
+    email: any;
+    firstname: string;
+    lastname: string;
     password: string;
     role: string;
   };

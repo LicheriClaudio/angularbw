@@ -1,8 +1,8 @@
 export interface Ireg {
-  username: string;
+  username?: string;
   email: string;
-  nome: string;
-  cognome: string;
+  firstname: string;
+  lastname: string;
   password: string;
   role: [string];
 }
