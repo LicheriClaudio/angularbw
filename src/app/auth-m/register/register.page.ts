@@ -1,11 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ServiceService } from '../service.service';
+import { Ireg } from '../interface/ireg';
 
 @Component({
   templateUrl: './register.page.html',
   styleUrls: ['./register.page.scss'],
+  selector: 'form-field-prefix-suffix-example',
 })
 export class RegisterPage implements OnInit {
   @ViewChild('f') form!: NgForm;
@@ -15,13 +17,36 @@ export class RegisterPage implements OnInit {
   labelPosition: 'before' | 'after' = 'after';
   disabled = false;
   error = undefined;
-  constructor(private Serviceservice: ServiceService, private router: Router) {}
+
+  FormGroup = this._form.group({
+    username: ['', Validators.required],
+    email: ['', Validators.required],
+    password: ['', Validators.required],
+    firstname: ['', Validators.required],
+    lastname: ['', Validators.required],
+    role: ['', Validators.required],
+    
+  });
+
+
+  constructor(
+    private Serviceservice: ServiceService, 
+    private router: Router,
+    private _form: FormBuilder) {}
 
   ngOnInit(): void {}
 
    invia() {
+    let f: Ireg = {
+      username : this.FormGroup.value.username || '',
+      email : this.FormGroup.value.email || '',
+      password : this.FormGroup.value.password || '',
+      firstname : this.FormGroup.value.firstname|| '',
+      lastname : this.FormGroup.value.lastname || '',
+      role : this.FormGroup.value.role|| '',
+    }
     //console.log(this.form.value)
-    this.Serviceservice.signup(this.form.value).subscribe(
+    this.Serviceservice.signup(f).subscribe(
       (resp) => {
         console.log(resp);
         this.error = undefined;

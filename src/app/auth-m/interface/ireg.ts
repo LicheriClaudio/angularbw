@@ -4,5 +4,5 @@ export interface Ireg {
   firstname: string;
   lastname: string;
   password: string;
-  role: [string];
+  role: string;
 }

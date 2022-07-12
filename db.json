@@ -1,6 +1,5 @@
 {
   "users": [
-
     {
       "email": "claudio.licheri95@gmail.com",
       "password": "$2a$10$W9qrBTAgH0oyhIrZeUYTEuwb4dsI/MOH9s/81q6FLpjOhtd8GObcy",
@@ -9,6 +8,33 @@
       "lastname": "Licheri",
       "role": "admin",
       "id": 1
+    },
+    {
+      "email": "luce@gmail.com",
+      "password": "$2a$10$6wWev16MGAshtsOMXCxbk.t6maN6E51Hen5OfR3X0jVk0RVvfoLaS",
+      "username": "Luca",
+      "firstname": "Luca",
+      "lastname": "Verdi",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "email": "luigi@gemail.com",
+      "password": "$2a$10$EjI2MFw1iVfcjEWCQK0teOsLiRzYEF9wMI1CiFMEUudDJaTLItfwi",
+      "username": "luigi88",
+      "firstname": "luigi",
+      "lastname": "di mario",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "email": "j.snow@gmail.com",
+      "password": "$2a$10$ApLx.N9NX8IlzG.KvuLiRuEUJukPnSCVnIbfqGZz1rgazoz3FQOs6",
+      "username": "",
+      "firstname": "",
+      "lastname": "Snow",
+      "role": "",
+      "id": 4
     }
   ],
   "fatture": [],
