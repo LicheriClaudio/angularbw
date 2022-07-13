@@ -1,9 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-
-
-
 import { NgForm, FormBuilder, Validators } from '@angular/forms';
-
 import { Router } from '@angular/router';
 import { ServiceService } from '../service.service';
 import { Ireg } from '../interface/ireg';

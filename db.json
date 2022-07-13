@@ -3,7 +3,6 @@
     {
       "email": "claudio.licheri95@gmail.com",
       "password": "$2a$10$4hjfwresGjtI9PFKy/c55utrz3KJdqq9R2E6U5YVhPzJ1qcGngj8e",
-
       "username": "lichclau",
       "firstname": "Claudio",
       "lastname": "Licheri",
@@ -72,6 +71,40 @@
       "lastname": "Lannister",
       "role": "user",
       "id": 8
+    },
+    {
+      "email": "lucaproietti56@gmail.com",
+      "password": "$2a$10$rKTWKX/iHrA1FqaEPfnitunVMMFfmcYGoTnk9Zj7x.iTpCJ/.ZVf6",
+      "username": "Luca",
+      "firstname": "Luca",
+      "lastname": "Proietti",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "email": "dizzy@gmail.com",
+      "password": "$2a$10$YOLPvutSMG0rAd2BIGYfauoHMF2QedQBABrZLj0ZRsdJXFnfOKE1y",
+      "username": "Dizzy123",
+      "firstname": "Donato",
+      "lastname": "Colonna",
+      "role": "user",
+      "id": 10
+    },
+    {
+      "email": "hugh@gmail.com",
+      "password": "$2a$10$I0i10Y3WuMTmLTAI7VRoHe/LOtksME5zoofi2FmPmDnVB6ITg09kq",
+      "firstname": "Hugh",
+      "lastname": "Schubert",
+      "id": 11
+    },
+    {
+      "email": "carlo@gmail.com",
+      "password": "$2a$10$Qt1xwZcEsGAKtQgjtwUZRObPkykBtT6o7Ez8Yy7iZkElDH52B9cCq",
+      "username": "Carlo99",
+      "firstname": "Carlo",
+      "lastname": "Carovita",
+      "role": "user",
+      "id": 12
     }
   ],
   "fatture": [],
