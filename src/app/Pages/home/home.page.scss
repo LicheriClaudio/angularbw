@@ -1,8 +1,42 @@
-*{
+/* mat{
   color: rgb(0, 0, 0);
   width: 20rem;
-  height: 20rem;
+  height: auto;
   text-align: center;
  margin: 0rem auto;
- background-color: rgba(240, 248, 255, 0.763);
+ background-color: rgb(240, 248, 255);
+} */
+
+
+#due {
+
+  width: 15rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  height: 10rem;
+   background: rgb(15,112,0);
+background: linear-gradient(90deg, rgba(15,112,0,0.8099614845938375) 0%, rgba(15,112,0,0.8127626050420168) 36%, rgba(255,255,255,0.8407738095238095) 37%, rgba(255,255,255,1) 69%, rgba(223,35,35,0.7791491596638656) 70%, rgba(198,67,38,0.8211659663865546) 100%);;
+}
+#due img {
+  width: 50%;
+
+}
+/* #due {} */
+
+.due {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+   margin: 0 auto;
+  margin-top: 2rem;
+  height: 10rem
+}
+
+#due:hover {
+  transform: scale(1.2);
+
+}
+
+.mat-card{
+  width: auto;
 }

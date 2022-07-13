@@ -12,6 +12,7 @@ import { ProfilePage } from './Pages/profile/profile.page';
 import { AboutusPage } from './Pages/aboutus/aboutus.page';
 import { FatturePage } from './Pages/fatture/fatture.page';
 import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     AuthMModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
