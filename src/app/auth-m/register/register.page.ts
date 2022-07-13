@@ -1,5 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+
+
+
 import { NgForm, FormBuilder, Validators } from '@angular/forms';
+
 import { Router } from '@angular/router';
 import { ServiceService } from '../service.service';
 import { Ireg } from '../interface/ireg';
@@ -25,12 +29,12 @@ export class RegisterPage implements OnInit {
     firstname: ['', Validators.required],
     lastname: ['', Validators.required],
     role: ['', Validators.required],
-    
+
   });
 
 
   constructor(
-    private Serviceservice: ServiceService, 
+    private Serviceservice: ServiceService,
     private router: Router,
     private _form: FormBuilder) {}
 
@@ -57,6 +61,8 @@ export class RegisterPage implements OnInit {
         this.error = err.error;
       }
     );
+
+
   }
 
 }
