@@ -1,1 +1,17 @@
-<mat-card> aboutus works!</mat-card>
+<mat-card *ngFor="let tile of tiles">
+
+<mat-grid-list cols="3" rowHeight="100px">
+ <h2> <mat-grid-tile
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+   {{tile.text}}
+  </mat-grid-tile></h2>
+  <br>
+</mat-grid-list>
+<p>{{customer}}
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, fugiat nobis saepe aut minima natus minus incidunt repudiandae eum perferendis laborum sed deleniti sequi ipsa facilis officia fugit aliquam. Consequatur!</p>
+
+
+
+</mat-card>

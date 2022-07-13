@@ -1,33 +1,34 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Iusers } from 'src/app/auth-m/interface/iusers';
+import { Clienti } from 'src/app/auth-m/interface/clienti';
 import { ServiceService } from 'src/app/auth-m/service.service';
 
 @Component({
-  templateUrl: './contact.page.html',
-  styleUrls: ['./contact.page.scss']
+  templateUrl: './clienti.page.html',
+  styleUrls: ['./clienti.page.scss']
 })
-export class ContactPage implements OnInit {
+export class ClientiPage implements OnInit {
 
-  displayedColumns: any[] = ['username', 'email', 'firstname', 'lastname', 'role'];
-  dataSource: Iusers[] = [];
+  users: Clienti[] = [];
   error = undefined;
 
-  constructor(private authService: ServiceService, private http: HttpClient) { }
+  constructor(private userService: ServiceService, private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.getAllUsers()
+    this.getAllclients()
   }
 
-  getAllUsers() {
+  getAllclients() {
+    
+
     console.log('Chiamata Ajax al server')
-    this.authService.authSubject.subscribe(userLogin => {
-      this.http.get<Iusers[]>('http://localhost:4200/users', {
+    this.userService.authSubject.subscribe(userLogin => {
+      this.http.get<Clienti[]>('http://localhost:3000/aziende', {
         headers: new HttpHeaders({ "Authorization": "Bearer " + userLogin?.AccessToken})})
         .subscribe(
           resp => {
             console.log(resp)
-            this.dataSource = resp;
+            this.users = resp;
           },
           err => {
             console.log(err)
@@ -35,8 +36,6 @@ export class ContactPage implements OnInit {
           }
         )
     })
-  }
 
 }
-
-
+}

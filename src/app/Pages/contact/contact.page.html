@@ -1,1 +1,34 @@
-<mat-card> contact works!</mat-card>
+<div class="background-user">
+    <h1>Ecco gli ultimi utenti registrati</h1>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  
+      <ng-container matColumnDef="Username">
+        <th mat-header-cell *matHeaderCellDef> Username </th>
+        <td mat-cell *matCellDef="let element"> {{element.users.username}} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="firstname">
+        <th mat-header-cell *matHeaderCellDef> Firstname </th>
+        <td mat-cell *matCellDef="let element"> {{element.firstname}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="lastname">
+        <th mat-header-cell *matHeaderCellDef> Lastname </th>
+        <td mat-cell *matCellDef="let element"> {{element.lastname}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="role">
+        <th mat-header-cell *matHeaderCellDef> Role </th>
+        <td mat-cell *matCellDef="let element"> {{element.role}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>

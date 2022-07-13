@@ -1,0 +1,34 @@
+<body> 
+    <h1>Clienti</h1>
+<div class="products">
+
+
+
+<div  *ngFor="let item of users" >
+    <mat-card class="example-card" style="width : 20em; height: 40em;">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{item.ragioneSociale}}</mat-card-title>
+          
+        
+        </mat-card-header>
+        <img mat-card-image src="../../../assets/img/rider.jpg" alt="Photo of Company" >
+        <mat-card-content>
+          <p>
+              
+              Email: {{item.email}} 
+              <br>
+              Tel: {{item.telefono}} 
+
+          </p>
+        </mat-card-content>
+       
+      </mat-card>
+
+
+</div> 
+{{error}}
+</div>
+</body> 
+
+
