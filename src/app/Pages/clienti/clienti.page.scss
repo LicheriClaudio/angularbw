@@ -1,0 +1,29 @@
+
+h1 {
+    
+    text-align: center;
+    margin-left: 33%;
+    margin-right: 33%;
+    width: 25%;
+    color:white;
+}
+
+.products {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: transparent ;
+    
+}
+
+.products div{
+    margin-top: 10px;
+    
+}
+
+mat-card {
+    background-color: black;
+    color: white;
+  
+}
