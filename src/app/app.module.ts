@@ -21,6 +21,7 @@ import { FormRegisterclientiComponent } from './component/form-registerclienti/f
 import { ClientiPage } from './Pages/clienti/clienti.page';
 
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -35,7 +36,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     FormFattureComponent,
     FormRegisterclientiComponent,
     ClientiPage
-    
+
   ],
   imports: [
     BrowserModule,
@@ -48,8 +49,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatInputModule,
     MatIconModule,
     ReactiveFormsModule,
+    MatGridListModule,
+    MatExpansionModule,
     FormsModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent],
