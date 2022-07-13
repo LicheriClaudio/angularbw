@@ -83,5 +83,30 @@
     }
   ],
   "fatture": [],
+<<<<<<< HEAD
   "aziende": []
+=======
+  "aziende": [
+    {
+      "ragioneSociale": "Bruno-Romano SPA",
+      "partitaIva": "14812266616",
+      "pec": "antonio.damico@gmail.com",
+      "telefono": "+38 855 62 44 5685",
+      "email": "rosalino.caruso@gmail.com",
+      "nomeContatto": "Sarita",
+      "cognomeContatto": "Serr",
+      "telefonoContatto": "380.260.3225",
+      "emailContatto": "armando.martinelli@hotmail.com",
+      "via": "Contrada Gastone 4, Piano 4",
+      "cap": "38615",
+      "civico": "698",
+      "localita": "Vania del friuli",
+      "comune": "LASTRA A SIGNA",
+      "provincia": "FIRENZE",
+      "dataInserimento": "",
+      "dataUltimoContatto": "",
+      "id": 1
+    }
+  ]
+>>>>>>> 57b97646764699924e869868cf6f3f386ba6dc57
 }

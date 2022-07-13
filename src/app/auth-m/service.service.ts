@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { BehaviorSubject, tap } from 'rxjs';
+import { Clienti } from './interface/clienti';
 import { Fattura } from './interface/fattura';
 import { Ireg } from './interface/ireg';
 import { Iusers } from './interface/iusers';
@@ -105,4 +106,10 @@ export class ServiceService {
   sendFattura(obj: Fattura) {
     return this.http.post(this.urlJsonServer + '/fatture', obj);
   }
+
+
+
+signclient(obj: Clienti) {
+  return this.http.post(this.urlJsonServer+'/aziende', obj);
+}
 }
