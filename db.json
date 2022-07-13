@@ -3,7 +3,6 @@
     {
       "email": "claudio.licheri95@gmail.com",
       "password": "$2a$10$4hjfwresGjtI9PFKy/c55utrz3KJdqq9R2E6U5YVhPzJ1qcGngj8e",
-
       "username": "lichclau",
       "firstname": "Claudio",
       "lastname": "Licheri",
@@ -72,6 +71,15 @@
       "lastname": "Lannister",
       "role": "user",
       "id": 8
+    },
+    {
+      "email": "pinco@live.it",
+      "password": "$2a$10$zPx5pHEfBgctKHFKdOalXu/qE358QBQAcw0xCMdAptRit9ye4U63G",
+      "username": "pinco",
+      "firstname": "pinco",
+      "lastname": "pallo",
+      "role": "user",
+      "id": 9
     }
   ],
   "fatture": [],

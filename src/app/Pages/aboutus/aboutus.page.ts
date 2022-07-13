@@ -1,5 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { Iusers } from 'src/app/auth-m/interface/iusers';
+import { ServiceService } from 'src/app/auth-m/service.service';
 
 
 
@@ -11,14 +14,25 @@ import {MatGridListModule} from '@angular/material/grid-list';
 })
 export class AboutusPage implements OnInit {
   tiles: Tile[] = [
-    {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
-    {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
-    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
+    {text: 'La nostra policy lorem ipsum dolor sit amet', cols: 3, rows: 1, color: 'lightblue'},
+    {text: '', cols: 3, rows: 1, color: 'lightblue'},
+
   ];
-  constructor() { }
+
+  customer='';
+  user:Iusers[] = [];
+
+
+  constructor(private Serviceservice: ServiceService,
+              private http: HttpClient
+    ) {
+
+  }
 
   ngOnInit(): void {
+    this.Serviceservice.authSubject.subscribe((param) => {
+      this.customer=`${param?.user.username}-${param?.user.lastname}`;
+    })
   }
 
 }
