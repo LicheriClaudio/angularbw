@@ -1,12 +1,12 @@
-<form #f="ngForm" (ngSubmit)="invia()">
+<form [formGroup]="RegisterFormGroup" #f="ngForm" (ngSubmit)="invia()">
 
 <div>
   <h1>REGISTER</h1>
-  <p>
-
+  <p class="form-group">
   <mat-form-field appearance="legacy">
     <mat-label for="username">Username</mat-label>
-    <input ngModel name="username" required matInput placeholder="Placeholder" minlength="3">
+    <input type="text" formControlName="username" class="form-control" matInput placeholder="Inserisci uno username..." required>
+    <span class="text-danger" *ngIf="RegisterFormGroup.controls['username'].dirty && RegisterFormGroup.hasError('required', 'username')">*L'username è obbligatorio!</span>
     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     <mat-hint>1</mat-hint>
   </mat-form-field>
@@ -14,7 +14,8 @@
 <p>
   <mat-form-field appearance="standard">
     <mat-label for="email">Email</mat-label>
-    <input type="email"  id="email" ngModel name="email" required email matInput placeholder="Placeholder" minlength="3">
+    <input type="email" formControlName="email" class="form-control" required email matInput placeholder="Inserisci la tua mail" required>
+    <span class="text-danger" *ngIf="RegisterFormGroup.controls['email'].dirty && RegisterFormGroup.hasError('required', 'email')">*L'email è obbligatoria!</span>
     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     <mat-hint>2</mat-hint>
   </mat-form-field>
@@ -22,8 +23,9 @@
 <p>
   <mat-form-field appearance="fill">
     <mat-label for="password">Password</mat-label>
-   <input [type]="hide ? 'password' : 'text'" ngModel name="password" required password id="password" matInput placeholder="password" minlength="3">
-        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+   <input [type]="hide ? 'password' : 'text'" formControlName="password" class="form-control" id="password" matInput placeholder="Inserisci una password" required>
+   <span class="text-danger" *ngIf="RegisterFormGroup.controls['email'].dirty && RegisterFormGroup.hasError('required', 'password')">*La password è obbligatoria!</span>
+   <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
           [attr.aria-pressed]="hide">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
@@ -33,7 +35,8 @@
 <p>
   <mat-form-field appearance="outline">
     <mat-label for="firstname">Firstname</mat-label>
-    <input ngModel name="firstname" required matInput placeholder="Placeholder" minlength="3">
+    <input type="text" formControlName="firstname" class="form-control" matInput placeholder="Inserisci il tuo nome..." required>
+    <span class="text-danger" *ngIf="RegisterFormGroup.controls['firstname'].dirty && RegisterFormGroup.hasError('required', 'firstname')">*Il tuo nome è obbligatorio!</span>
     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     <mat-hint>4</mat-hint>
   </mat-form-field>
@@ -41,7 +44,8 @@
 <p>
   <mat-form-field appearance="outline">
     <mat-label for="lastname">Lastname</mat-label>
-    <input ngModel name="lastname" required matInput placeholder="Placeholder" minlength="3">
+    <input type="text" formControlName="lastname" class="form-control" matInput placeholder="Inserisci il tuo cognome..." required>
+    <span class="text-danger" *ngIf="RegisterFormGroup.controls['lastname'].dirty && RegisterFormGroup.hasError('required', 'cognome')">*Il tuo cognome è obbligatorio!</span>
     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     <mat-hint>5</mat-hint>
   </mat-form-field>
@@ -49,14 +53,12 @@
 <p>
   <mat-form-field appearance="outline">
     <mat-label for="role">Role</mat-label>
-    <input ngModel name="role" required matInput placeholder="Placeholder" minlength="3">
+    <input type="text" formControlName="role" class="form-control" matInput placeholder="Inserisci il tuo ruolo..." required>
+    <span class="text-danger" *ngIf="RegisterFormGroup.controls['role'].dirty && RegisterFormGroup.hasError('required', 'role')">*Il tuo ruolo è obbligatorio!</span>
     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     <mat-hint>Hint</mat-hint>
   </mat-form-field>
-  <button mat-raised-button color="primary" type="submit" class="btn btn-primary w-100">Submit</button>
+  <button mat-raised-button color="primary" type="submit" [disabled]="!RegisterFormGroup.valid" btn btn-primary w-100>Submit</button>
 </p>
-<div class="alert alert-danger" role="alert" *ngIf="error">
-    {{error}}
-  </div>
 </div>
 </form>

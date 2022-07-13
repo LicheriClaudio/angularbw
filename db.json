@@ -1,6 +1,77 @@
 {
   "users": [
-
+    {
+      "email": "claudio.licheri95@gmail.com",
+      "password": "$2a$10$W9qrBTAgH0oyhIrZeUYTEuwb4dsI/MOH9s/81q6FLpjOhtd8GObcy",
+      "username": "lichclau",
+      "firstname": "Claudio",
+      "lastname": "Licheri",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "email": "luce@gmail.com",
+      "password": "$2a$10$6wWev16MGAshtsOMXCxbk.t6maN6E51Hen5OfR3X0jVk0RVvfoLaS",
+      "username": "Luca",
+      "firstname": "Luca",
+      "lastname": "Verdi",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "email": "luigi@gemail.com",
+      "password": "$2a$10$EjI2MFw1iVfcjEWCQK0teOsLiRzYEF9wMI1CiFMEUudDJaTLItfwi",
+      "username": "luigi88",
+      "firstname": "luigi",
+      "lastname": "di mario",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "email": "j.snow@gmail.com",
+      "password": "$2a$10$ApLx.N9NX8IlzG.KvuLiRuEUJukPnSCVnIbfqGZz1rgazoz3FQOs6",
+      "username": "",
+      "firstname": "",
+      "lastname": "Snow",
+      "role": "",
+      "id": 4
+    },
+    {
+      "email": "paoloniluca@gmail.com",
+      "password": "$2a$10$Q7dJY.t9Tbm0SvdRbpUFUehJaYrPM3oYgM5p6aluPjLzen0piy/6G",
+      "username": "",
+      "firstname": "Luca",
+      "lastname": "Paoloni",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "email": "tonino94@gmail.com",
+      "password": "$2a$10$YvC1K.TpcCbSZ3JTXM.WJecNNSBdUm2C8UrDljqYTuxTbgjOL2js2",
+      "username": "",
+      "firstname": "Antonino",
+      "lastname": "Squillace",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "email": "taleta98@gmail.com",
+      "password": "$2a$10$YnFa2fv3QETeZ9r.W9LqG.fS3c5aCpZ/sOjMW4mlg/0nLDVH51z.u",
+      "username": "",
+      "firstname": "Pietro",
+      "lastname": "Taleta",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "email": "tywin@gmail.com",
+      "password": "$2a$10$rJ2xdOrA3mu8jZK2wZp66O4ul8sxmIYRXP61cKfOY3Jrwe51bXx6O",
+      "username": "TywinLannnister",
+      "firstname": "Tywin",
+      "lastname": "Lannister",
+      "role": "user",
+      "id": 8
+    }
   ],
   "fatture": [],
   "aziende": []
