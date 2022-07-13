@@ -1,14 +1,12 @@
 <body>
     
     <form class="register" #f="ngForm" (ngSubmit)="onSubmit()">
-      <div>
         <h1>Register Clienti</h1>
-        <p class="form-group"> 
-      <mat-form-field appearance="legacy">
+        <div>
+      <mat-form-field appearance="fill">
         <mat-label>Ragione Sociale</mat-label>
         <input matInput type="text"ngModel name="ragioneSociale"  placeholder="Insert Ragione Sociale">
       </mat-form-field>
-    </p>
       <mat-form-field appearance="fill">
         <mat-label>Partita Iva</mat-label>
         <input matInput type="text"ngModel name="partitaIva"  placeholder="Partita Iva">
@@ -48,6 +46,8 @@
         <mat-label>Email Contatto</mat-label>
         <input matInput type="email"ngModel name="emailContatto"  placeholder="Insert Email Contatto">
       </mat-form-field>
+    </div>
+    <div>
       <h4>Dati Sede Operativa</h4>
       <mat-form-field appearance="fill">
         <mat-label>Via</mat-label>

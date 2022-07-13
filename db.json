@@ -97,10 +97,8 @@
       "lastname": "Schubert",
       "id": 11
     }
-    
   ],
   "fatture": [],
-
   "aziende": [
     {
       "ragioneSociale": "Bruno-Romano SPA",
@@ -121,7 +119,66 @@
       "dataInserimento": "",
       "dataUltimoContatto": "",
       "id": 1
+    },
+    {
+      "ragioneSociale": "W",
+      "partitaIva": "w",
+      "pec": "w",
+      "telefono": "w",
+      "email": "w",
+      "nomeContatto": "w",
+      "cognomeContatto": "w",
+      "telefonoContatto": "w",
+      "emailContatto": "w",
+      "via": "w",
+      "cap": "w",
+      "civico": "w",
+      "localita": "w",
+      "comune": "w",
+      "provincia": "w",
+      "dataInserimento": "",
+      "dataUltimoContatto": "",
+      "id": 2
+    },
+    {
+      "ragioneSociale": "",
+      "partitaIva": "",
+      "pec": "",
+      "telefono": "",
+      "email": "",
+      "nomeContatto": "",
+      "cognomeContatto": "",
+      "telefonoContatto": "",
+      "emailContatto": "",
+      "via": "",
+      "cap": "",
+      "civico": "",
+      "localita": "",
+      "comune": "",
+      "provincia": "",
+      "dataInserimento": "",
+      "dataUltimoContatto": "",
+      "id": 3
+    },
+    {
+      "ragioneSociale": "",
+      "partitaIva": "",
+      "pec": "",
+      "telefono": "",
+      "email": "",
+      "nomeContatto": "",
+      "cognomeContatto": "",
+      "telefonoContatto": "",
+      "emailContatto": "",
+      "via": "",
+      "cap": "",
+      "civico": "",
+      "localita": "",
+      "comune": "",
+      "provincia": "",
+      "dataInserimento": "",
+      "dataUltimoContatto": "",
+      "id": 4
     }
   ]
-
 }

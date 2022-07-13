@@ -1,9 +1,9 @@
-div {
+form {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 400px;
    align-items: center;
-   width:35%;
+   width:65%;
    margin: 4rem auto;
   
     justify-content: center;
@@ -11,8 +11,14 @@ div {
     background-color: rgba(240, 248, 255, 0.797);
     border-radius: 20px;
     float: left;
+    padding: 5%
   }
   button{
-    display: block;
+      margin: 0 40%;
+     
+      
+    
+   
+    text-align: center;
   }
   
