@@ -16,7 +16,9 @@ import { FormFattureComponent } from './component/form-fatture/form-fatture.comp
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
+import { FormRegisterclientiComponent } from './component/form-registerclienti/form-registerclienti.component';
+import { ClientiPage } from './Pages/clienti/clienti.page';
 
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatExpansionModule} from '@angular/material/expansion';
@@ -32,6 +34,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AboutusPage,
     FatturePage,
     FormFattureComponent,
+    FormRegisterclientiComponent,
+    ClientiPage
+
   ],
   imports: [
     BrowserModule,
@@ -45,7 +50,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     ReactiveFormsModule,
     MatGridListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
