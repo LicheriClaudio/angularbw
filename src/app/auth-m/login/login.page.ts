@@ -1,5 +1,5 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Ireg } from '../interface/ireg';
 import { Iusers } from '../interface/iusers';
@@ -19,6 +19,7 @@ export class LoginPage implements OnInit {
   use = '';
   @ViewChild('f') form!: NgForm;
   constructor(private Serviceservice: ServiceService, private router: Router) {}
+
 
   ngOnInit(): void {
     console.log('ngoninit funziona');
