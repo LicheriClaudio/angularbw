@@ -29,7 +29,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     AuthMModule,
     MatButtonModule,
-    MatCardModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],

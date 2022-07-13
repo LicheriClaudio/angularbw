@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormControl, NgForm, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ServiceService } from '../service.service';
 
@@ -32,6 +32,8 @@ export class RegisterPage implements OnInit {
         this.error = err.error;
       }
     );
+
+
   }
 
 }

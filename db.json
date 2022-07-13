@@ -1,6 +1,14 @@
 {
   "users": [
-
+    {
+      "email": "claudio.licheri95@gmail.com",
+      "password": "$2a$10$4hjfwresGjtI9PFKy/c55utrz3KJdqq9R2E6U5YVhPzJ1qcGngj8e",
+      "username": "lichclau",
+      "firstname": "Claudio",
+      "lastname": "Licheri",
+      "role": "admin",
+      "id": 1
+    }
   ],
   "fatture": [],
   "aziende": []

@@ -12,7 +12,7 @@ import { ProfilePage } from './Pages/profile/profile.page';
 const routes: Routes = [
   {
     path: 'fatture',
-    canActivate: [GuardGuard],
+    /* canActivate: [GuardGuard], */
     /* loadChildren: () =>
       import('./Pages/fatture/fatture.page').then((m) => m.FatturePage), */
     component: FatturePage,
