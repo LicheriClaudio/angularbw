@@ -27,7 +27,7 @@ export class ServiceService {
     console.log('Chiamata Ajax al server');
     this.authSubject.subscribe((userLogin) => {
       this.http
-        .get<Iusers[]>('http://localhost:3000/users', {
+        .get<Iusers[]>('http://localhost:3000/contact', {
           headers: new HttpHeaders({
             Authorization: 'Bearer ' + userLogin?.AccessToken,
           }),

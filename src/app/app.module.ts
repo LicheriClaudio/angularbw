@@ -12,6 +12,7 @@ import { ProfilePage } from './Pages/profile/profile.page';
 import { AboutusPage } from './Pages/aboutus/aboutus.page';
 import { FatturePage } from './Pages/fatture/fatture.page';
 import { MatButtonModule } from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
 import { FormFattureComponent } from './component/form-fatture/form-fatture.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -45,6 +46,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AuthMModule,
     MatButtonModule,
     MatCardModule,
+    MatTableModule,
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,

@@ -14,9 +14,13 @@
 <p>
   <mat-form-field appearance="standard">
     <mat-label for="email">Email</mat-label>
+<<<<<<< HEAD
+    <input type="email" formControlName="email" class="form-control" required email matInput placeholder="Inserisci la tua mail..." required>
+=======
 <!--     <input  type="email"  id="email" ngModel name="email" required email matInput placeholder="Placeholder">
  -->
     <input type="email" formControlName="email" class="form-control" required email matInput placeholder="Inserisci la tua mail" required>
+>>>>>>> 20753035122ac56412239e071d3a8f9d1cfac4b0
     <span class="text-danger" *ngIf="RegisterFormGroup.controls['email'].dirty && RegisterFormGroup.hasError('required', 'email')">*L'email è obbligatoria!</span>
     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     <mat-hint>2</mat-hint>
