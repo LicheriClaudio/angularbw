@@ -3,7 +3,9 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { GuardGuard } from './auth-m/guard.guard';
 import { LoginPage } from './auth-m/login/login.page';
 import { RegisterPage } from './auth-m/register/register.page';
+import { FormRegisterclientiComponent } from './component/form-registerclienti/form-registerclienti.component';
 import { AboutusPage } from './Pages/aboutus/aboutus.page';
+import { ClientiPage } from './Pages/clienti/clienti.page';
 import { ContactPage } from './Pages/contact/contact.page';
 import { FatturePage } from './Pages/fatture/fatture.page';
 import { HomePage } from './Pages/home/home.page';
@@ -49,6 +51,20 @@ const routes: Routes = [
     path: 'login',
 
     component: LoginPage,
+  },
+  {
+    path: 'registerclienti',
+    /* canActivate: [GuardGuard], */
+    /* loadChildren: () =>
+      import('./Pages/fatture/fatture.page').then((m) => m.FatturePage), */
+    component: FormRegisterclientiComponent,
+  },
+  {
+    path: 'clienti',
+    /* canActivate: [GuardGuard], */
+    /* loadChildren: () =>
+      import('./Pages/fatture/fatture.page').then((m) => m.FatturePage), */
+    component: ClientiPage,
   },
 
   {

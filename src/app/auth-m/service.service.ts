@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { BehaviorSubject, tap } from 'rxjs';
+import { Clienti } from './interface/clienti';
 import { Fattura } from './interface/fattura';
 import { Ireg } from './interface/ireg';
 import { Iusers } from './interface/iusers';
@@ -79,14 +80,36 @@ export class ServiceService {
   }
 
 
- addFatture(obj: Fattura) {
-    return this.http.post<Iusers>(this.urlJsonServer + '/fatture', obj).pipe(
-      tap((data) => {
-        this.authSubject.next(data);
-        console.log(data)
-        console.log(obj)
 
-      })
-    );
+  getAllFatture() {
+    console.log('Chiamata Ajax al server');
+    this.authSubject.subscribe((userLogin) => {
+      this.http
+        .get<Fattura[]>('http://localhost:3000/fatture', {
+          headers: new HttpHeaders({
+            Authorization: 'Bearer ' + userLogin?.AccessToken,
+          }),
+        })
+        .subscribe(
+          (resp) => {
+            console.log(resp);
+            this.fatt = resp;
+          },
+          (err) => {
+            console.log(err);
+            this.error = err.error;
+          }
+        );
+    });
   }
+
+  sendFattura(obj: Fattura) {
+    return this.http.post(this.urlJsonServer + '/fatture', obj);
+  }
+
+
+
+signclient(obj: Clienti) {
+  return this.http.post(this.urlJsonServer+'/aziende', obj);
+}
 }

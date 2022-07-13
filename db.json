@@ -96,17 +96,32 @@
       "firstname": "Hugh",
       "lastname": "Schubert",
       "id": 11
-    },
-    {
-      "email": "carlo@gmail.com",
-      "password": "$2a$10$Qt1xwZcEsGAKtQgjtwUZRObPkykBtT6o7Ez8Yy7iZkElDH52B9cCq",
-      "username": "Carlo99",
-      "firstname": "Carlo",
-      "lastname": "Carovita",
-      "role": "user",
-      "id": 12
     }
+    
   ],
   "fatture": [],
-  "aziende": []
+
+  "aziende": [
+    {
+      "ragioneSociale": "Bruno-Romano SPA",
+      "partitaIva": "14812266616",
+      "pec": "antonio.damico@gmail.com",
+      "telefono": "+38 855 62 44 5685",
+      "email": "rosalino.caruso@gmail.com",
+      "nomeContatto": "Sarita",
+      "cognomeContatto": "Serr",
+      "telefonoContatto": "380.260.3225",
+      "emailContatto": "armando.martinelli@hotmail.com",
+      "via": "Contrada Gastone 4, Piano 4",
+      "cap": "38615",
+      "civico": "698",
+      "localita": "Vania del friuli",
+      "comune": "LASTRA A SIGNA",
+      "provincia": "FIRENZE",
+      "dataInserimento": "",
+      "dataUltimoContatto": "",
+      "id": 1
+    }
+  ]
+
 }

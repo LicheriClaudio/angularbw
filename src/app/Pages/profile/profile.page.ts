@@ -35,8 +35,10 @@ change(){
   console.log(this.switch)
   return this.switch
 }
-addF(listF:Fattura){
-  this.Serviceservice.addFatture(listF)
-}
+
+// ho fatto i commenti perche non funziona adesso
+// addF(listF:Fattura){
+//   this.Serviceservice.addFatture(listF)
+// }
 
 }

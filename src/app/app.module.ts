@@ -13,6 +13,16 @@ import { AboutusPage } from './Pages/aboutus/aboutus.page';
 import { FatturePage } from './Pages/fatture/fatture.page';
 import { MatButtonModule } from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
+import { FormFattureComponent } from './component/form-fatture/form-fatture.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
+import { FormRegisterclientiComponent } from './component/form-registerclienti/form-registerclienti.component';
+import { ClientiPage } from './Pages/clienti/clienti.page';
+
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -24,6 +34,10 @@ import {MatTableModule} from '@angular/material/table';
     ProfilePage,
     AboutusPage,
     FatturePage,
+    FormFattureComponent,
+    FormRegisterclientiComponent,
+    ClientiPage
+
   ],
   imports: [
     BrowserModule,
@@ -32,7 +46,15 @@ import {MatTableModule} from '@angular/material/table';
     AuthMModule,
     MatButtonModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    MatGridListModule,
+    MatExpansionModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],

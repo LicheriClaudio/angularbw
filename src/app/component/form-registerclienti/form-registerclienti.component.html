@@ -1,0 +1,93 @@
+<body>
+    
+    <form class="register" #f="ngForm" (ngSubmit)="onSubmit()">
+      <div>
+        <h1>Register Clienti</h1>
+        <p class="form-group"> 
+      <mat-form-field appearance="legacy">
+        <mat-label>Ragione Sociale</mat-label>
+        <input matInput type="text"ngModel name="ragioneSociale"  placeholder="Insert Ragione Sociale">
+      </mat-form-field>
+    </p>
+      <mat-form-field appearance="fill">
+        <mat-label>Partita Iva</mat-label>
+        <input matInput type="text"ngModel name="partitaIva"  placeholder="Partita Iva">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Pec</mat-label>
+        <input matInput type="text"ngModel name="pec"  placeholder="Insert Pec">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Telefono</mat-label>
+        <input matInput type="text"ngModel name="telefono"  placeholder="Insert Telefono">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" ngModel name="email" placeholder="Insert Email">
+      </mat-form-field>
+      <!-- <mat-form-field appearance="fill">
+        <mat-label>Tipo CLiente</mat-label>
+        <mat-select>
+          <mat-option ngModel value="one">X</mat-option>
+          <mat-option ngModel value="two">Y</mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      <mat-form-field appearance="fill">
+        <mat-label>Nome Contatto</mat-label>
+        <input matInput type="text"ngModel name="nomeContatto"  placeholder="Insert Nome">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Cognome Contatto</mat-label>
+        <input matInput type="text"ngModel name="cognomeContatto"  placeholder="Insert Cognome">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Telefono Contatto</mat-label>
+        <input matInput type="text"ngModel name="telefonoContatto"  placeholder="Insert Telefono Contatto">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Email Contatto</mat-label>
+        <input matInput type="email"ngModel name="emailContatto"  placeholder="Insert Email Contatto">
+      </mat-form-field>
+      <h4>Dati Sede Operativa</h4>
+      <mat-form-field appearance="fill">
+        <mat-label>Via</mat-label>
+        <input matInput type="text" ngModel name="via" placeholder="Insert Via">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Cap</mat-label>
+        <input matInput type="text" ngModel name="cap" placeholder="Insert Cap">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Civio</mat-label>
+        <input matInput type="text" ngModel name="civico" placeholder="Insert Civio">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Localita</mat-label>
+        <input matInput type="text" ngModel name="localita" placeholder="Insert Localita">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Comune</mat-label>
+        <input matInput type="text" ngModel name="comune" placeholder="Insert Comune">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Provincia</mat-label>
+        <input matInput type="text" ngModel name="provincia" placeholder="Insert Provincia">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>dataInserimento</mat-label>
+        <input matInput type="date" ngModel name="dataInserimento" placeholder="Insert dataInserimento">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>dataUltimoContatto</mat-label>
+        <input matInput type="date" ngModel name="dataUltimoContatto" placeholder="Insert dataUltimoContatto">
+      </mat-form-field>
+      <button mat-button color="accent" type="submit" style="width : 10em; height: 3em;">Submit</button>
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="error">
+      {{error}}
+    </div>
+    </form>
+    
+    
+    </body>
+
