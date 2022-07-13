@@ -20,6 +20,9 @@ import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { FormRegisterclientiComponent } from './component/form-registerclienti/form-registerclienti.component';
 import { ClientiPage } from './Pages/clienti/clienti.page';
 
+import {MatGridListModule} from '@angular/material/grid-list';
+
+
 @NgModule({
   declarations: [
     AppComponent,
