@@ -18,7 +18,7 @@ export class RegisterPage implements OnInit {
   disabled = false;
   error = undefined;
 
-  FormGroup = this._form.group({
+  RegisterFormGroup = this._form.group({
     username: ['', Validators.required],
     email: ['', Validators.required],
     password: ['', Validators.required],
@@ -38,12 +38,12 @@ export class RegisterPage implements OnInit {
 
    invia() {
     let f: Ireg = {
-      username : this.FormGroup.value.username || '',
-      email : this.FormGroup.value.email || '',
-      password : this.FormGroup.value.password || '',
-      firstname : this.FormGroup.value.firstname|| '',
-      lastname : this.FormGroup.value.lastname || '',
-      role : this.FormGroup.value.role|| '',
+      username : this.RegisterFormGroup.value.username || '',
+      email : this.RegisterFormGroup.value.email || '',
+      password : this.RegisterFormGroup.value.password || '',
+      firstname : this.RegisterFormGroup.value.firstname|| '',
+      lastname : this.RegisterFormGroup.value.lastname || '',
+      role : this.RegisterFormGroup.value.role|| '',
     }
     //console.log(this.form.value)
     this.Serviceservice.signup(f).subscribe(

@@ -44,6 +44,33 @@
       "lastname": "Paoloni",
       "role": "user",
       "id": 5
+    },
+    {
+      "email": "tonino94@gmail.com",
+      "password": "$2a$10$YvC1K.TpcCbSZ3JTXM.WJecNNSBdUm2C8UrDljqYTuxTbgjOL2js2",
+      "username": "",
+      "firstname": "Antonino",
+      "lastname": "Squillace",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "email": "taleta98@gmail.com",
+      "password": "$2a$10$YnFa2fv3QETeZ9r.W9LqG.fS3c5aCpZ/sOjMW4mlg/0nLDVH51z.u",
+      "username": "",
+      "firstname": "Pietro",
+      "lastname": "Taleta",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "email": "tywin@gmail.com",
+      "password": "$2a$10$rJ2xdOrA3mu8jZK2wZp66O4ul8sxmIYRXP61cKfOY3Jrwe51bXx6O",
+      "username": "TywinLannnister",
+      "firstname": "Tywin",
+      "lastname": "Lannister",
+      "role": "user",
+      "id": 8
     }
   ],
   "fatture": [],
