@@ -83,9 +83,6 @@
     }
   ],
   "fatture": [],
-<<<<<<< HEAD
-  "aziende": []
-=======
   "aziende": [
     {
       "ragioneSociale": "Bruno-Romano SPA",
@@ -108,5 +105,4 @@
       "id": 1
     }
   ]
->>>>>>> 57b97646764699924e869868cf6f3f386ba6dc57
 }
