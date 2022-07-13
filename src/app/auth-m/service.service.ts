@@ -77,4 +77,32 @@ export class ServiceService {
     this.router.navigate(['/login']);
     location.reload();
   }
+
+
+
+  getAllFatture() {
+    console.log('Chiamata Ajax al server');
+    this.authSubject.subscribe((userLogin) => {
+      this.http
+        .get<Fattura[]>('http://localhost:3000/fatture', {
+          headers: new HttpHeaders({
+            Authorization: 'Bearer ' + userLogin?.AccessToken,
+          }),
+        })
+        .subscribe(
+          (resp) => {
+            console.log(resp);
+            this.fatt = resp;
+          },
+          (err) => {
+            console.log(err);
+            this.error = err.error;
+          }
+        );
+    });
+  }
+
+  sendFattura(obj: Fattura) {
+    return this.http.post(this.urlJsonServer + '/fatture', obj);
+  }
 }

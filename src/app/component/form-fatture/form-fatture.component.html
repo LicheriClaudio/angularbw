@@ -1,0 +1,65 @@
+<form [formGroup]="RegisterFormGroup" #f="ngForm" (ngSubmit)="invia()">
+
+  <div>
+    <h1>REGISTER</h1>
+    <p class="form-group">
+    <mat-form-field appearance="legacy">
+      <mat-label for="anno">Anno</mat-label>
+      <input type="number" formControlName="anno" class="form-control" matInput placeholder="Inserisci l'anno..." required>
+      <span class="text-danger" *ngIf="RegisterFormGroup.controls['anno'].dirty && RegisterFormGroup.hasError('required', 'anno')">*L'username è obbligatorio!</span>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>1</mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="standard">
+      <mat-label for="cliente">Cliente</mat-label>
+      <input type="text" formControlName="cliente" class="form-control" required matInput placeholder="Inserisci la tua mail" required>
+      <span class="text-danger" *ngIf="RegisterFormGroup.controls['cliente'].dirty && RegisterFormGroup.hasError('required', 'cliente')">*L'email è obbligatoria!</span>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>2</mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label for="data">Data</mat-label>
+     <input type="text" formControlName="data" class="form-control" id="password" matInput placeholder="Inserisci una password" required>
+     <span class="text-danger" *ngIf="RegisterFormGroup.controls['data'].dirty && RegisterFormGroup.hasError('required', 'data')">*La password è obbligatoria!</span>
+     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+      <mat-hint>3</mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label for="importo">Importo</mat-label>
+      <input type="text" formControlName="importo" class="form-control" matInput placeholder="Inserisci il tuo nome..." required>
+      <span class="text-danger" *ngIf="RegisterFormGroup.controls['importo'].dirty && RegisterFormGroup.hasError('required', 'importo')">*Il tuo nome è obbligatorio!</span>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>4</mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label for="numero">Numero</mat-label>
+      <input type="text" formControlName="numero" class="form-control" matInput placeholder="Inserisci il tuo cognome..." required>
+      <span class="text-danger" *ngIf="RegisterFormGroup.controls['numero'].dirty && RegisterFormGroup.hasError('required', 'numero')">*Il tuo cognome è obbligatorio!</span>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>5</mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label for="stato">Stato</mat-label>
+      <input type="text" formControlName="stato" class="form-control" matInput placeholder="Inserisci il tuo ruolo..." required>
+      <span class="text-danger" *ngIf="RegisterFormGroup.controls['stato'].dirty && RegisterFormGroup.hasError('required', 'stato')">*Il tuo ruolo è obbligatorio!</span>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!RegisterFormGroup.valid" btn btn-primary w-100>Submit</button>
+  </p>
+  </div>
+  </form>
+

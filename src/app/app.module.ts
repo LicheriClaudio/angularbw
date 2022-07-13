@@ -12,6 +12,11 @@ import { ProfilePage } from './Pages/profile/profile.page';
 import { AboutusPage } from './Pages/aboutus/aboutus.page';
 import { FatturePage } from './Pages/fatture/fatture.page';
 import { MatButtonModule } from '@angular/material/button';
+import { FormFattureComponent } from './component/form-fatture/form-fatture.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +27,7 @@ import { MatButtonModule } from '@angular/material/button';
     ProfilePage,
     AboutusPage,
     FatturePage,
+    FormFattureComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +36,10 @@ import { MatButtonModule } from '@angular/material/button';
     AuthMModule,
     MatButtonModule,
     MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
