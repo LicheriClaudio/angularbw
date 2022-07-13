@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Fattura } from 'src/app/auth-m/interface/fattura';
 import { Iusers } from 'src/app/auth-m/interface/iusers';
 import { ServiceService } from 'src/app/auth-m/service.service';
 
@@ -12,8 +13,10 @@ export class ProfilePage implements OnInit {
   use = 'ciao ';
   error = undefined;
   users: Iusers[] = [];
+  listF: Fattura[] = [];
   hidden = false;
   hidden2 = false;
+  switch = false
   constructor(
     private Serviceservice: ServiceService,
     private http: HttpClient
@@ -25,4 +28,15 @@ export class ProfilePage implements OnInit {
        this.utente = `${val?.user.firstname} -- ${val?.user.lastname}`;
      });
   }
+
+
+change(){
+   this.switch = true
+  console.log(this.switch)
+  return this.switch
+}
+addF(listF:Fattura){
+  this.Serviceservice.addFatture(listF)
+}
+
 }

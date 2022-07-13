@@ -6,8 +6,8 @@
 <button mat-button color="primary"><a class="active" href="#" routerLink="/contact">Contact</a></button>
 <button mat-button color="primary"><a class="active" href="#" routerLink="/aboutus" routerLinkActive="router-link-active">AboutUs</a></button>
 <button mat-button color="primary"><a class="active" href="#" routerLink="/profile" routerLinkActive="router-link-active">MyProfile</a></button>
-<button mat-button color="primary"><a class="active" href="#" routerLink="/login" (click)="logout()">LOGOUT</a></button>
 <button mat-button color="primary"><a class="active" href="#" routerLink="/home" routerLinkActive="router-link-active">Home</a></button>
 <button mat-button color="primary"><a  class="active" href="#" routerLink="/fatture" routerLinkActive="router-link-active">Fatture</a></button>
+<button mat-button color="warn" id="logout"><a class="active" href="#" routerLink="/login" (click)="logout()">LOGOUT</a></button>
 </div>
 <mat-card class="ciao1"> <div class="ciao1"><a style="color:black ; font-weight: bold;" class="ciao1" [routerLink]="['/home']" routerLinkActive="router-link-active">{{myname}}</a></div></mat-card>

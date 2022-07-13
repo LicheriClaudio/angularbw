@@ -77,4 +77,16 @@ export class ServiceService {
     this.router.navigate(['/login']);
     location.reload();
   }
+
+
+ addFatture(obj: Fattura) {
+    return this.http.post<Iusers>(this.urlJsonServer + '/fatture', obj).pipe(
+      tap((data) => {
+        this.authSubject.next(data);
+        console.log(data)
+        console.log(obj)
+
+      })
+    );
+  }
 }
