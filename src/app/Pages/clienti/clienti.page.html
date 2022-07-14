@@ -1,6 +1,6 @@
 <body> 
     <h1>Clienti</h1>
-        <div>
+        <div class="box">
             <mat-card *ngFor="let item of users" class="example-card" >
                 <mat-card-header>
              
@@ -14,11 +14,40 @@
                     Tel: {{item.telefono}} 
                 </p>
                 </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button (click)="modifyClient()">Modify</button>
+                    <button mat-button (click)="removeClient(item.id)">Remove</button>
+                  </mat-card-actions>
             </mat-card>
             <section>
                 {{error}}
             </section>
         </div>   
+
+        <div *ngIf="modifybox === true">
+            <div class="modify">
+            <mat-form-field>
+                <label>Name</label>
+                <input>
+            </mat-form-field>
+            <mat-form-field>
+                <label>Telephone</label>
+                <input>
+            </mat-form-field>
+            <mat-form-field>
+                <label>Email</label>
+                <input>
+            </mat-form-field>
+            <mat-form-field>
+                <label>Address</label>
+                <input>
+            </mat-form-field>
+               
+                <br>
+         <button mat-button (click)="update()">Update</button>
+         <button mat-button (click)="close()">close</button>
+        </div>
+              </div>
 </body> 
 
 
