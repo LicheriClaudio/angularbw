@@ -130,23 +130,10 @@
       "id": 1
     },
     {
-      "ragioneSociale": "",
-      "partitaIva": "",
-      "pec": "",
-      "telefono": "",
-      "email": "",
-      "nomeContatto": "",
-      "cognomeContatto": "",
-      "telefonoContatto": "",
-      "emailContatto": "",
-      "via": "",
-      "cap": "",
-      "civico": "",
-      "localita": "",
-      "comune": "",
-      "provincia": "",
-      "dataInserimento": "",
-      "dataUltimoContatto": "",
+      "ragioneSociale": "New SRL",
+      "emailAziendale": "craigbauer89@gmail.com",
+      "nomeContatto": "Craig Bauer",
+      "telefono": "+34 6789 789",
       "id": 2
     },
     {
