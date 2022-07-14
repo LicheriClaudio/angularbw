@@ -1,5 +1,77 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-light  "id="bottoni"style="width: 280px;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">MENU</span>
+    </a>
+    <div class="dropdown">
+      <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong>{{profilo}}</strong>
+      </a>
+      <ul  class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">Fatture</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="active" href="#" routerLink="/profile" routerLinkActive="router-link-active">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="active" href="#" routerLink="/login" (click)="logout()">Sign out</a></li>
+      </ul>
+    </div>
+    <hr>
 
-<div class="bottoni">
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <button id="login"><a class="activeLog" href="#" routerLink="/login">Login
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+
+        </a></button>
+      </li>
+      <li>
+        <a class="active" href="#" routerLink="/register" >Register
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+
+        </a>
+      </li>
+      <li>
+        <a class="active" href="#" routerLink="/contact">Contact
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+
+        </a>
+      </li>
+      <li>
+        <a class="active" href="#" routerLink="/aboutus" routerLinkActive="router-link-active">AboutUs
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+
+        </a>
+      </li>
+      <li>
+       <a class="active" href="#" routerLink="/home" routerLinkActive="router-link-active">HOME
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+
+        </a>
+      </li>
+      <li>
+      <a  class="active" href="#" routerLink="/registerclienti" routerLinkActive="router-link-active">Register Agency
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+
+        </a>
+      </li>
+      <li>
+        <a  class="active" href="#" routerLink="/fatture" routerLinkActive="router-link-active">Fatture
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+
+        </a>
+      </li>
+       <li>
+        <a  class="active" href="#" routerLink="/clienti" routerLinkActive="router-link-active">Clients
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+
+        </a>
+      </li>
+    </ul>
+    <hr>
+
+  </div>
+<!-- <div class="bottoni">
   <div class="title"><h1 style="margin-bottom: 2rem;">AngularBW</h1></div>
 <button mat-button color="primary"><a class="active" href="#" routerLink="/login">Login</a></button>
 <button mat-button color="primary"><a class="active" href="#" routerLink="/register" >Register</a></button>
@@ -12,4 +84,7 @@
 <button mat-button color="primary"><a  class="active" href="#" routerLink="/fatture" routerLinkActive="router-link-active">Fatture</a></button>
 <button mat-button color="warn" id="logout"><a class="active" href="#" routerLink="/login" (click)="logout()">LOGOUT</a></button>
 </div>
-<mat-card class="ciao1"> <div class="ciao1"><a style="color:black ; font-weight: bold;" class="ciao1" [routerLink]="['/home']" routerLinkActive="router-link-active">{{myname}}</a></div></mat-card>
+
+ -->
+<!-- <mat-card class="ciao1"> <div class="ciao1"><a style="color:black ; font-weight: bold;" class="ciao1" [routerLink]="['/home']" routerLinkActive="router-link-active">{{myname}}</a></div></mat-card>
+ -->

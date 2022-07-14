@@ -37,10 +37,14 @@ $angularbw-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
-background: url("https://img.freepik.com/premium-vector/abstract-technology-chip-processor-background-circuit-board-html-code-background_115579-1225.jpg?w=2000");
-background-size:cover ;
+
+background-image:url("../src/assets/pexels-pratikxox-3263669.jpg") ;
+background-position:center ;
+
 background-repeat: no-repeat;
-height: auto;}
+
+}
+
 
 
 
