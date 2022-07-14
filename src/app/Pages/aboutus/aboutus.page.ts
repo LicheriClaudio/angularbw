@@ -14,8 +14,8 @@ import { ServiceService } from 'src/app/auth-m/service.service';
 })
 export class AboutusPage implements OnInit {
   tiles: Tile[] = [
-    {text: 'La nostra policy lorem ipsum dolor sit amet', cols: 3, rows: 1, color: 'lightblue'},
-    {text: '', cols: 3, rows: 1, color: 'lightblue'},
+    {text: 'DICONO DI NOI', cols: 2, rows: 1, color: ''},
+   // {text: 'lorem ipsum dolor sit amet, consectetur adipiscing el', cols: 3, rows: 1, color: 'lightblue'},
 
   ];
 
