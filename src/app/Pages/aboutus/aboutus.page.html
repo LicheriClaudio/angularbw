@@ -1,17 +1,35 @@
-<mat-card *ngFor="let tile of tiles">
 
-<mat-grid-list cols="3" rowHeight="100px">
- <h2> <mat-grid-tile
+<!-- <mat-grid-list cols="3" rowHeight="2em">
+ -->
+  <h2>
+    <mat-grid-tile  *ngFor="let tile of tiles"
       [colspan]="tile.cols"
       [rowspan]="tile.rows"
       [style.background]="tile.color">
    {{tile.text}}
-  </mat-grid-tile></h2>
-  <br>
-</mat-grid-list>
-<p>{{customer}}
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, fugiat nobis saepe aut minima natus minus incidunt repudiandae eum perferendis laborum sed deleniti sequi ipsa facilis officia fugit aliquam. Consequatur!</p>
+    </mat-grid-tile>
+  </h2>
+<!-- </mat-grid-list>
+ -->
+ <br>
+
+<mat-card *ngFor="let tile of tiles">
+
+<p><b>{{customer}}</b>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+  Error, fugiat nobis saepe aut minima natus minus incidunt
+  repudiandae eum perferendis laborum sed deleniti sequi ipsa
+  facilis officia fugit aliquam. Consequatur!</p>
 
 
+ </mat-card>
 
-</mat-card>
+
+ <mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Leave a comment</mat-label>
+  <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+  <button mat-button>Pubblica</button>
+
+</mat-form-field>
+
+
