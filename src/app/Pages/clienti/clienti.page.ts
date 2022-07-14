@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, NgForm, Validators } from '@angular/forms';
 import { Clienti } from 'src/app/auth-m/interface/clienti';
 import { ServiceService } from 'src/app/auth-m/service.service';
 
@@ -9,11 +10,31 @@ import { ServiceService } from 'src/app/auth-m/service.service';
 })
 export class ClientiPage implements OnInit {
 
-  users: Clienti[] = [];
+
+  @ViewChild('f') form!: NgForm;
+  hide = true;
+  checked = false;
+  indeterminate = false;
+  labelPosition: 'before' | 'after' = 'after';
+  disabled = false;
   error = undefined;
+  currentid = 0;
+  
+
+  ClientRegisterFormGroup = this._form.group({
+    ragioneSociale: ['', Validators.required],
+    telefono: ['', Validators.required],
+    nomeContatto: ['', Validators.required],
+    emailAziendale: ['', Validators.required],
+
+  });
+
+  users: Clienti[] = [];
+  removeselcted = false;
   modifybox = false;
 
-  constructor(private userService: ServiceService, private http: HttpClient) { }
+  constructor(private userService: ServiceService, private http: HttpClient,
+    private _form: FormBuilder) { }
 
   ngOnInit(): void {
     this.getAllclients()
@@ -45,16 +66,22 @@ export class ClientiPage implements OnInit {
 
 }
 
-removeClient(id: number) {
- 
+checkremove (id:number) {
+  
+  this.removeselcted = true;
+  this.currentid = id;
+}
+
+removeClient() {
+  
   this.userService.authSubject.subscribe(userLogin => {
-    this.http.delete<Clienti[]>('http://localhost:3000/aziende/'+ id, {
+    this.http.delete<Clienti[]>('http://localhost:3000/aziende/'+ this.currentid, {
       headers: new HttpHeaders({ "Authorization": "Bearer " + userLogin?.AccessToken})})
       .subscribe(
         resp => {
           console.log(resp)
           this.getAllclients()
-         
+          this.removeselcted = false;
         },
         // err => {
         //   console.log(err)
@@ -65,9 +92,9 @@ removeClient(id: number) {
   }
 
 
-modifyClient() {
-  
+modifyClient(id:number) {
   this.modifybox = true;
+  this.currentid = id;
 }
 
 update() {
@@ -76,6 +103,34 @@ update() {
 
 close() {
   this.modifybox = false;
+  this.removeselcted = false;
+}
+
+modify() {
+  console.log(this.currentid)
+  {
+ 
+    this.userService.authSubject.subscribe(userLogin => {
+      this.http.put<Clienti[]>('http://localhost:3000/aziende/'+ this.currentid,{
+        ragioneSociale: this.form.value.ragioneSociale,
+        emailAziendale: this.form.value.emailAziendale,
+        nomeContatto:this.form.value.nomeContatto,
+        telefono: this.form.value.telefono
+    }, {
+        headers: new HttpHeaders({ "Authorization": "Bearer " + userLogin?.AccessToken})})
+        .subscribe(
+          resp => {
+            console.log(resp)
+            this.getAllclients()
+            this.modifybox = false;
+          },
+          // err => {
+          //   console.log(err)
+          //   this.error = err.error
+          // }
+        )
+    })
+    }
 }
 
 }

@@ -17,8 +17,9 @@
                 </p>
                 </mat-card-content>
                 <mat-card-actions>
-                    <button mat-button (click)="modifyClient()">Modify</button>
-                    <button mat-button (click)="removeClient(item.id)">Remove</button>
+                    <button mat-button (click)="modifyClient(item.id)">Modify</button>
+                    <button mat-button (click)="checkremove(item.id)">Remove</button> 
+                    <!-- <button mat-button (click)="removeClient(item.id)">Remove</button> -->
                   </mat-card-actions>
             </mat-card>
             <section>
@@ -27,29 +28,58 @@
         </div>   
 
         <div *ngIf="modifybox === true">
+            
             <div class="modify">
-            <mat-form-field>
-                <label>Name</label>
-                <input>
-            </mat-form-field>
-            <mat-form-field>
-                <label>Telephone</label>
-                <input>
-            </mat-form-field>
-            <mat-form-field>
-                <label>Email</label>
-                <input>
-            </mat-form-field>
-            <mat-form-field>
-                <label>Address</label>
-                <input>
-            </mat-form-field>
-               
-                <br>
-         <button mat-button (click)="update()">Update</button>
-         <button mat-button (click)="close()">close</button>
+                <h1>Modify Profile</h1>
+                
+                <form [formGroup]="ClientRegisterFormGroup" class="register" #f="ngForm" (ngSubmit)="modify()">
+                   
+                    <div>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Ragione Sociale</mat-label>
+                    <input matInput type="text" formControlName="ragioneSociale" class="form-control" placeholder="Insert Ragione Sociale" required>
+                    <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['ragioneSociale'].dirty && ClientRegisterFormGroup.hasError('required', 'ragioneSociale')">*L'username è obbligatorio!</span>
+                  </mat-form-field>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Telefono</mat-label>
+                    <input matInput type="text" formControlName="telefono" class="form-control" placeholder="Insert Telefono" required>
+                    <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['telefono'].dirty && ClientRegisterFormGroup.hasError('required', 'telefono')">*L'username è obbligatorio!</span>
+                  </mat-form-field>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="emailAziendale" class="form-control" placeholder="Insert Email" required>
+                    <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['emailAziendale'].dirty && ClientRegisterFormGroup.hasError('required', 'emailAziendale')">*L'username è obbligatorio!</span>
+                  </mat-form-field>
+                  <mat-form-field appearance="fill">
+                    <mat-label>Nome Contatto</mat-label>
+                    <input matInput type="text" formControlName="nomeContatto" class="form-control" placeholder="Insert Nome" required>
+                    <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['nomeContatto'].dirty && ClientRegisterFormGroup.hasError('required', 'nomeContatto')">*L'username è obbligatorio!</span>
+                  </mat-form-field>
+                  <button mat-button color="accent" [disabled]="!ClientRegisterFormGroup.valid" type="submit" style="width : 10em; height: 3em;">Submit</button>
+                  <button mat-button (click)="close()">Close</button>
+                </div>
+
+                <div class="alert alert-danger" role="alert" *ngIf="error">
+                  {{error}}
+                </div>
+                </form>
+
+
+         <!-- <button mat-button (click)="update()">Update</button> -->
+         
         </div>
               </div>
+
+        <div *ngIf="removeselcted === true">
+            
+            <div class="modify">
+                <h1>Are you sure you wish to remove this User?</h1>
+                <button (click)="removeClient()">Yes, Remove</button>
+                <button  (click)="close()">Close</button>
+            </div>
+        </div>
+
+                   
 </body> 
 
 
