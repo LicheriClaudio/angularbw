@@ -124,6 +124,9 @@ removeclient(id:number){
 
 }
 
+modifyclient(id:number, cliente:any){
+  return this.http.put<Clienti>(this.urlJsonServer+'/aziende/', cliente);
+}
 
 
 }
