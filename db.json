@@ -105,6 +105,15 @@
       "lastname": "Bauer",
       "role": "admin",
       "id": 12
+    },
+    {
+      "email": "qwert@gmail.com",
+      "password": "$2a$10$uaNr.ckkO3JZ1DWiAaUbpOZ9ZQFWRB3EMrzM0y3oGfNKAOXNbra5W",
+      "username": "qwerty",
+      "firstname": "Henry",
+      "lastname": "Cunningham",
+      "role": "Illo eos qui soluta ",
+      "id": 13
     }
   ],
   "fatture": [
@@ -143,6 +152,33 @@
       "numero": null,
       "stato": "Dolor doloribus rem ",
       "id": 4
+    },
+    {
+      "anno": 84,
+      "cliente": "Dolorem molestiae in",
+      "data": "Quia sit velit volu",
+      "importo": null,
+      "numero": null,
+      "stato": "Doloremque in veniam",
+      "id": 5
+    },
+    {
+      "anno": 84,
+      "cliente": "Dolorem molestiae in",
+      "data": "Quia sit velit volu",
+      "importo": null,
+      "numero": null,
+      "stato": "Doloremque in veniam",
+      "id": 6
+    },
+    {
+      "anno": 84,
+      "cliente": "Dolorem molestiae in",
+      "data": "Quia sit velit volu",
+      "importo": null,
+      "numero": null,
+      "stato": "Doloremque in veniam",
+      "id": 7
     }
   ],
   "aziende": [
@@ -280,6 +316,82 @@
       "dataInserimento": "2001-01-30",
       "dataUltimoContatto": "2022-06-30",
       "id": 10
+    },
+    {
+      "ragioneSociale": "Possimus est deleni",
+      "partitaIva": "Deleniti culpa dolo",
+      "pec": "Eu ut consequatur d",
+      "telefono": "Dolor fuga Unde rat",
+      "nomeContatto": "Suscipit nesciunt e",
+      "cognomeContatto": "Et aliqua Omnis cum",
+      "telefonoContatto": "Quaerat asperiores d",
+      "emailAziendale": "mogowidif@mailinator.com",
+      "emailContatto": "qowuruho@mailinator.com",
+      "via": "Commodo ab anim susc",
+      "cap": "Architecto ea aliqua",
+      "civico": "Temporibus cupidatat",
+      "comune": "Quidem lorem volupta",
+      "provincia": "Autem esse dolorum ",
+      "dataInserimento": "2004-12-13",
+      "dataUltimoContatto": "1993-06-08",
+      "id": 11
+    },
+    {
+      "ragioneSociale": "Possimus est deleni",
+      "partitaIva": "Deleniti culpa dolo",
+      "pec": "Eu ut consequatur d",
+      "telefono": "Dolor fuga Unde rat",
+      "nomeContatto": "Suscipit nesciunt e",
+      "cognomeContatto": "Et aliqua Omnis cum",
+      "telefonoContatto": "Quaerat asperiores d",
+      "emailAziendale": "mogowidif@mailinator.com",
+      "emailContatto": "qowuruho@mailinator.com",
+      "via": "Commodo ab anim susc",
+      "cap": "Architecto ea aliqua",
+      "civico": "Temporibus cupidatat",
+      "comune": "Quidem lorem volupta",
+      "provincia": "Autem esse dolorum ",
+      "dataInserimento": "2004-12-13",
+      "dataUltimoContatto": "1993-06-08",
+      "id": 12
+    },
+    {
+      "ragioneSociale": "Possimus est deleni",
+      "partitaIva": "Deleniti culpa dolo",
+      "pec": "Eu ut consequatur d",
+      "telefono": "Dolor fuga Unde rat",
+      "nomeContatto": "Suscipit nesciunt e",
+      "cognomeContatto": "Et aliqua Omnis cum",
+      "telefonoContatto": "Quaerat asperiores d",
+      "emailAziendale": "mogowidif@mailinator.com",
+      "emailContatto": "qowuruho@mailinator.com",
+      "via": "Commodo ab anim susc",
+      "cap": "Architecto ea aliqua",
+      "civico": "Temporibus cupidatat",
+      "comune": "Quidem lorem volupta",
+      "provincia": "Autem esse dolorum ",
+      "dataInserimento": "2004-12-13",
+      "dataUltimoContatto": "1993-06-08",
+      "id": 14
+    },
+    {
+      "ragioneSociale": "Possimus est deleni",
+      "partitaIva": "Deleniti culpa dolo",
+      "pec": "Eu ut consequatur d",
+      "telefono": "Dolor fuga Unde rat",
+      "nomeContatto": "Suscipit nesciunt e",
+      "cognomeContatto": "Et aliqua Omnis cum",
+      "telefonoContatto": "Quaerat asperiores d",
+      "emailAziendale": "mogowidif@mailinator.com",
+      "emailContatto": "qowuruho@mailinator.com",
+      "via": "Commodo ab anim susc",
+      "cap": "Architecto ea aliqua",
+      "civico": "Temporibus cupidatat",
+      "comune": "Quidem lorem volupta",
+      "provincia": "Autem esse dolorum ",
+      "dataInserimento": "2004-12-13",
+      "dataUltimoContatto": "1993-06-08",
+      "id": 15
     }
   ]
 }
