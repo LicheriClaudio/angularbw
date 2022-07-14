@@ -107,7 +107,44 @@
       "id": 12
     }
   ],
-  "fatture": [],
+  "fatture": [
+    {
+      "anno": 28,
+      "cliente": "Do qui laborum eu et",
+      "data": "Quis laboris aut dol",
+      "importo": null,
+      "numero": null,
+      "stato": "Et dolore dolores at",
+      "id": 1
+    },
+    {
+      "anno": 28,
+      "cliente": "Do qui laborum eu et",
+      "data": "Quis laboris aut dol",
+      "importo": null,
+      "numero": null,
+      "stato": "Et dolore dolores at",
+      "id": 2
+    },
+    {
+      "anno": 29,
+      "cliente": "Debitis magni magna ",
+      "data": "Ipsum cum reiciendi",
+      "importo": null,
+      "numero": null,
+      "stato": "Dolor doloribus rem ",
+      "id": 3
+    },
+    {
+      "anno": 29,
+      "cliente": "Debitis magni magna ",
+      "data": "Ipsum cum reiciendi",
+      "importo": null,
+      "numero": null,
+      "stato": "Dolor doloribus rem ",
+      "id": 4
+    }
+  ],
   "aziende": [
     {
       "ragioneSociale": "Bruno-Romano SPA",
