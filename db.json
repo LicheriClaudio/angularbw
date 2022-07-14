@@ -121,26 +121,6 @@
       "id": 1
     },
     {
-      "ragioneSociale": "",
-      "partitaIva": "",
-      "pec": "",
-      "telefono": "",
-      "email": "",
-      "nomeContatto": "",
-      "cognomeContatto": "",
-      "telefonoContatto": "",
-      "emailContatto": "",
-      "via": "",
-      "cap": "",
-      "civico": "",
-      "localita": "",
-      "comune": "",
-      "provincia": "",
-      "dataInserimento": "",
-      "dataUltimoContatto": "",
-      "id": 2
-    },
-    {
       "ragioneSociale": "Alfa Spa",
       "partitaIva": "00000000",
       "pec": "alfa@pec.it",
@@ -161,25 +141,6 @@
       "id": 3
     },
     {
-      "ragioneSociale": "",
-      "partitaIva": "",
-      "pec": "",
-      "telefono": "",
-      "nomeContatto": "",
-      "cognomeContatto": "",
-      "telefonoContatto": "",
-      "emailAziendale": "",
-      "emailContatto": "",
-      "via": "",
-      "cap": "",
-      "civico": "",
-      "comune": "",
-      "provincia": "",
-      "dataInserimento": "",
-      "dataUltimoContatto": "",
-      "id": 4
-    },
-    {
       "ragioneSociale": "Di Luca e Figli Snc",
       "partitaIva": "000000000",
       "pec": "diluca@pec.it",
@@ -197,25 +158,6 @@
       "dataInserimento": "2018-10-12",
       "dataUltimoContatto": "2022-07-11",
       "id": 5
-    },
-    {
-      "ragioneSociale": "Sabatino & Di Maria Sas",
-      "partitaIva": "123123123",
-      "pec": "sabatino@pec.it",
-      "telefono": "12345678",
-      "nomeContatto": "Michele",
-      "cognomeContatto": "Sabatino",
-      "telefonoContatto": "12345678",
-      "emailAziendale": "sabatino@gmail.com",
-      "emailContatto": "sabatino@gmail.com",
-      "via": "Roma",
-      "cap": "00000",
-      "civico": "44",
-      "comune": "Pomezia",
-      "provincia": "RM",
-      "dataInserimento": "2014-11-22",
-      "dataUltimoContatto": "2011-06-28",
-      "id": 6
     },
     {
       "ragioneSociale": "Sabatino & Di Maria Sas",
@@ -256,9 +198,9 @@
       "id": 8
     },
     {
-      "ragioneSociale": "Bendetti Snc",
+      "ragioneSociale": "Benedetti Snc",
       "partitaIva": "00000000",
-      "pec": "dibenedetti@pec.it",
+      "pec": "benedetti@pec.it",
       "telefono": "123456789",
       "nomeContatto": "Giovanni",
       "cognomeContatto": "Benedetti",
