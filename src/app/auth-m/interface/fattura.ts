@@ -15,7 +15,7 @@ export interface Fattura {
   anno: number;
   cliente: string;
   data: string;
- /*  id: any; */
+  id?: any;
   importo: number;
   numero: number;
   stato: string;

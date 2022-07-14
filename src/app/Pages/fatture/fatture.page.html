@@ -1,6 +1,6 @@
-
-<mat-accordion>
-  <mat-expansion-panel hideToggle>
+<div id="fatture">
+<mat-accordion >
+  <mat-expansion-panel hideToggle class="addFatture">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Aggiungi una fattura
@@ -14,9 +14,14 @@
 </mat-accordion>
 
 
+
+<!-- lista fatture -->
+<mat-card class="listaFatture">
   <ul *ngFor="let fattura of fatt">
     <li >
-      {{fatt}}
+      {{fattura.anno}}--{{fattura.cliente}}--{{fattura.data}}--{{fattura.importo}}--{{fattura.numero}}--{{fattura.stato}}
+  <button (click)="removeFatture(fattura.id)">Remove</button>
     </li>
   </ul>
-
+</mat-card>
+</div>

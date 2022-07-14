@@ -116,71 +116,7 @@
       "id": 13
     }
   ],
-  "fatture": [
-    {
-      "anno": 28,
-      "cliente": "Do qui laborum eu et",
-      "data": "Quis laboris aut dol",
-      "importo": null,
-      "numero": null,
-      "stato": "Et dolore dolores at",
-      "id": 1
-    },
-    {
-      "anno": 28,
-      "cliente": "Do qui laborum eu et",
-      "data": "Quis laboris aut dol",
-      "importo": null,
-      "numero": null,
-      "stato": "Et dolore dolores at",
-      "id": 2
-    },
-    {
-      "anno": 29,
-      "cliente": "Debitis magni magna ",
-      "data": "Ipsum cum reiciendi",
-      "importo": null,
-      "numero": null,
-      "stato": "Dolor doloribus rem ",
-      "id": 3
-    },
-    {
-      "anno": 29,
-      "cliente": "Debitis magni magna ",
-      "data": "Ipsum cum reiciendi",
-      "importo": null,
-      "numero": null,
-      "stato": "Dolor doloribus rem ",
-      "id": 4
-    },
-    {
-      "anno": 84,
-      "cliente": "Dolorem molestiae in",
-      "data": "Quia sit velit volu",
-      "importo": null,
-      "numero": null,
-      "stato": "Doloremque in veniam",
-      "id": 5
-    },
-    {
-      "anno": 84,
-      "cliente": "Dolorem molestiae in",
-      "data": "Quia sit velit volu",
-      "importo": null,
-      "numero": null,
-      "stato": "Doloremque in veniam",
-      "id": 6
-    },
-    {
-      "anno": 84,
-      "cliente": "Dolorem molestiae in",
-      "data": "Quia sit velit volu",
-      "importo": null,
-      "numero": null,
-      "stato": "Doloremque in veniam",
-      "id": 7
-    }
-  ],
+  "fatture": [],
   "aziende": [
     {
       "ragioneSociale": "Bruno-Romano SPA",
@@ -201,44 +137,6 @@
       "dataInserimento": "",
       "dataUltimoContatto": "",
       "id": 1
-    },
-    {
-      "ragioneSociale": "Sabatino & Di Maria Sas",
-      "partitaIva": "123123123",
-      "pec": "sabatino@pec.it",
-      "telefono": "12345678",
-      "nomeContatto": "Michele",
-      "cognomeContatto": "Sabatino",
-      "telefonoContatto": "12345678",
-      "emailAziendale": "sabatino@gmail.com",
-      "emailContatto": "sabatino@gmail.com",
-      "via": "Roma",
-      "cap": "00000",
-      "civico": "44",
-      "comune": "Pomezia",
-      "provincia": "RM",
-      "dataInserimento": "2014-11-22",
-      "dataUltimoContatto": "2011-06-28",
-      "id": 7
-    },
-    {
-      "ragioneSociale": "Gamble Tech Srl",
-      "partitaIva": "00000000000",
-      "pec": "gamble@pec.it",
-      "telefono": "12345678",
-      "nomeContatto": "Teo",
-      "cognomeContatto": "Verri",
-      "telefonoContatto": "12345678",
-      "emailAziendale": "gamble@gmail.com",
-      "emailContatto": "verriteo90@gmail.com",
-      "via": "Merulana ",
-      "cap": "000000",
-      "civico": "3",
-      "comune": "Roma",
-      "provincia": "RM",
-      "dataInserimento": "2006-12-12",
-      "dataUltimoContatto": "2022-02-02",
-      "id": 8
     },
     {
       "ragioneSociale": "Benedetti Snc",

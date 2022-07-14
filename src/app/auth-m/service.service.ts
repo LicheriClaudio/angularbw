@@ -19,8 +19,9 @@ export class ServiceService {
   reg: Ireg[] = [];
   fatt: Fattura[] = [];
   error = undefined;
+
   constructor(private http: HttpClient, private router: Router) {
-     this.restoreUserLogin()
+    this.restoreUserLogin();
   }
 
   getAllUsers() {
@@ -107,23 +108,16 @@ export class ServiceService {
     return this.http.post(this.urlJsonServer + '/fatture', obj);
   }
 
+  signclient(obj: Clienti) {
+    return this.http.post(this.urlJsonServer + '/aziende', obj);
+  }
 
+  removeclient(id: number) {
+    return this.http.delete<Clienti>(this.urlJsonServer + '/aziende/' + id);
 
-signclient(obj: Clienti) {
-  return this.http.post(this.urlJsonServer+'/aziende', obj);
-}
-
-
-removeclient(id:number){
-  return this.http.delete<Clienti>(this.urlJsonServer+'/aziende/' + id);
-
-  // return this.http.delete<Clienti>('http://localhost:3000/users/2/')
-  //   .subscribe(resp => {
-  //       console.log(resp);
-  //   })
-
-}
-
-
-
+    // return this.http.delete<Clienti>('http://localhost:3000/users/2/')
+    //   .subscribe(resp => {
+    //       console.log(resp);
+    //   })
+  }
 }
