@@ -10,9 +10,9 @@
 
     </div>
   </mat-card>
-<mat-card>
+<mat-card class="css">
   <ul *ngFor="let users of prs">
-    <li>{{prs.user}}</li>
+    <li>{{prs | json}}</li>
   </ul>
 </mat-card>
 

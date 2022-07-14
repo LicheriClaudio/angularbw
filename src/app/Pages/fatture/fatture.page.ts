@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { NgForm, Validators, FormBuilder } from '@angular/forms';
 import { Fattura } from 'src/app/auth-m/interface/fattura';
 import { ServiceService } from 'src/app/auth-m/service.service';
 
@@ -8,17 +9,32 @@ import { ServiceService } from 'src/app/auth-m/service.service';
   styleUrls: ['./fatture.page.scss'],
 })
 export class FatturePage implements OnInit {
+  @ViewChild('f') form!: NgForm;
+  numid = 0;
   fatt: Fattura[] = [];
+  cambio = false;
+  private urlJsonServer = 'http://localhost:3000';
   error = undefined;
+  RegisterFormGroup = this._form.group({
+    anno: ['', Validators.required],
+    cliente: ['', Validators.required],
+    data: ['', Validators.required],
+    importo: ['', Validators.required],
+    numero: ['', Validators.required],
+    stato: ['', Validators.required],
+  });
+
+  cambio2 = false;
   constructor(
     private serviceService: ServiceService,
-    private http: HttpClient
+    private http: HttpClient,
+    private _form: FormBuilder
   ) {}
 
   ngOnInit(): void {
-
     this.getAllFatture();
     console.log(this.fatt);
+    this.cambio = false;
   }
   getAllFatture() {
     console.log('Chiamata Ajax al server');
@@ -26,7 +42,7 @@ export class FatturePage implements OnInit {
       this.http
         .get<Fattura[]>('http://localhost:3000/fatture', {
           headers: new HttpHeaders({
-            "Authorization": 'Bearer ' + userLogin?.AccessToken,
+            Authorization: 'Bearer ' + userLogin?.AccessToken,
           }),
         })
         .subscribe(
@@ -42,23 +58,77 @@ export class FatturePage implements OnInit {
     });
   }
 
-
-removeFatture(id: number) {
-
-  this.serviceService.authSubject.subscribe(userLogin => {
-    this.http.delete<Fattura[]>('http://localhost:3000/fatture/'+ id, {
-      headers: new HttpHeaders({ "Authorization": "Bearer " + userLogin?.AccessToken})})
-      .subscribe(
-        resp => {
-          console.log(resp)
-          this.getAllFatture()
-
-        },
-        // err => {
-        //   console.log(err)
-        //   this.error = err.error
-        // }
-      )
-  })
+  removeFatture(id: number) {
+    this.serviceService.authSubject.subscribe((userLogin) => {
+      this.http
+        .delete<Fattura[]>('http://localhost:3000/fatture/' + id, {
+          headers: new HttpHeaders({
+            Authorization: 'Bearer ' + userLogin?.AccessToken,
+          }),
+        })
+        .subscribe(
+          (resp) => {
+            console.log(resp);
+            this.getAllFatture();
+            this.cambio2 = false;
+          }
+          // err => {
+          //   console.log(err)
+          //   this.error = err.error
+          // }
+        );
+    });
   }
+
+  modify() {
+    console.log(this.numid);
+    {
+      this.serviceService.authSubject.subscribe((userLogin) => {
+        this.http
+          .put<Fattura[]>(
+            'http://localhost:3000/fatture/' + this.numid,
+            {
+              anno: this.form.value.anno,
+              cliente: this.form.value.cliente,
+              data: this.form.value.data,
+              id: this.form.value.id,
+              importo: this.form.value.importo,
+              numero: this.form.value.numero,
+              stato: this.form.value.stato,
+            },
+            {
+              headers: new HttpHeaders({
+                Authorization: 'Bearer ' + userLogin?.AccessToken,
+              }),
+            }
+          )
+          .subscribe((resp) => {
+            this.getAllFatture();
+            console.log(resp);
+
+            this.cambio2 = false;
+          });
+      });
+    }
+  }
+
+  modificaFatture(cliente: any) {
+    return this.http.put<Fattura>(this.urlJsonServer + '/fatture/', cliente);
+  }
+
+  modifyF(id: number) {
+    this.cambio = true;
+    this.numid = id;
+  }
+
+  update() {
+    this.cambio = false;
+  }
+
+  close() {
+    this.cambio = false;
+    this.cambio2 = false;
+  }
+
+
 }
