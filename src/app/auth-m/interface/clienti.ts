@@ -5,7 +5,7 @@ export interface Clienti {
 cognomeContatto: string;
 dataInserimento: Date;
 dataUltimoContatto: Date;
-email: string;
+emailAziendale: string;
 emailContatto: string;
 fatturatoAnnuale: string;
 id:any;

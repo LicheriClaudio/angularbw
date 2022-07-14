@@ -112,4 +112,18 @@ export class ServiceService {
 signclient(obj: Clienti) {
   return this.http.post(this.urlJsonServer+'/aziende', obj);
 }
+
+
+removeclient(id:number){
+  return this.http.delete<Clienti>(this.urlJsonServer+'/aziende/' + id);
+
+  // return this.http.delete<Clienti>('http://localhost:3000/users/2/')
+  //   .subscribe(resp => {
+  //       console.log(resp);
+  //   })
+
+}
+
+
+
 }
