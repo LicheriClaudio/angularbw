@@ -54,6 +54,7 @@ img {
     height: 600px;
     background-color: black;
     border: 5px solid white;
+    
 }
 
 .modify h1 {
@@ -94,6 +95,17 @@ form {
     
     text-align: center;
   }
+
+  .modify button {
+      
+      height: 50px;
+      width: 100%;
+  }
+
+  .modify h1 {
+      
+   margin-bottom: 0;
+}
   
 
 

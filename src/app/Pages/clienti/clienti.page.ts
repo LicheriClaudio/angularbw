@@ -30,7 +30,7 @@ export class ClientiPage implements OnInit {
   });
 
   users: Clienti[] = [];
- 
+  removeselcted = false;
   modifybox = false;
 
   constructor(private userService: ServiceService, private http: HttpClient,
@@ -66,16 +66,22 @@ export class ClientiPage implements OnInit {
 
 }
 
-removeClient(id: number) {
- 
+checkremove (id:number) {
+  
+  this.removeselcted = true;
+  this.currentid = id;
+}
+
+removeClient() {
+  
   this.userService.authSubject.subscribe(userLogin => {
-    this.http.delete<Clienti[]>('http://localhost:3000/aziende/'+ id, {
+    this.http.delete<Clienti[]>('http://localhost:3000/aziende/'+ this.currentid, {
       headers: new HttpHeaders({ "Authorization": "Bearer " + userLogin?.AccessToken})})
       .subscribe(
         resp => {
           console.log(resp)
           this.getAllclients()
-         
+          this.removeselcted = false;
         },
         // err => {
         //   console.log(err)
@@ -97,7 +103,7 @@ update() {
 
 close() {
   this.modifybox = false;
-  
+  this.removeselcted = false;
 }
 
 modify() {
