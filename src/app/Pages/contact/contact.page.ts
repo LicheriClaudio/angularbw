@@ -22,7 +22,7 @@ export class ContactPage implements OnInit {
   getAllUsers() {
     console.log('Chiamata Ajax al server')
     this.authService.authSubject.subscribe(userLogin => {
-      this.http.get<Iusers[]>('http://localhost:4200/users', {
+      this.http.get<Iusers[]>('http://localhost:3000/users', {
         headers: new HttpHeaders({ "Authorization": "Bearer " + userLogin?.AccessToken})})
         .subscribe(
           resp => {
