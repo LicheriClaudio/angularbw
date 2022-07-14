@@ -96,6 +96,15 @@
       "firstname": "Hugh",
       "lastname": "Schubert",
       "id": 11
+    },
+    {
+      "email": "craigbauer89@gmail.com",
+      "password": "$2a$10$TA0tbALKjM3z1v5DZmgtGeH1gk4B1KK8ovWdRY8PZMFPRAKvCJOQS",
+      "username": "craigbauer89",
+      "firstname": "Craig",
+      "lastname": "Bauer",
+      "role": "admin",
+      "id": 12
     }
   ],
   "fatture": [],
