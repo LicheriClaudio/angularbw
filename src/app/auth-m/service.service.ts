@@ -112,17 +112,8 @@ export class ServiceService {
     return this.http.post(this.urlJsonServer + '/aziende', obj);
   }
 
-  removeclient(id: number) {
-    return this.http.delete<Clienti>(this.urlJsonServer + '/aziende/' + id);
 
-    // return this.http.delete<Clienti>('http://localhost:3000/users/2/')
-    //   .subscribe(resp => {
-    //       console.log(resp);
-    //   })
-  }
-}
-<<<<<<< HEAD
-=======
+
 
 
 removeclient(id:number){
@@ -141,4 +132,3 @@ modifyclient(id:number, cliente:any){
 
 
 }
->>>>>>> daeeeb580fa2d597a2ede9f153a18c929f2ce66a
