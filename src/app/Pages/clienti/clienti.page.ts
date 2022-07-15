@@ -102,7 +102,7 @@ removeClient() {
         },
         // err => {
         //   console.log(err)
-        //   this.error = err.error
+        //   this.error = err.error ciao sono io!
         // }
       )
   })
