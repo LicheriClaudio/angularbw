@@ -1,5 +1,23 @@
 <div id="fatture">
-<mat-accordion >
+<!-- <mat-accordion >
+  <mat-expansion-panel hideToggle class="addFatture">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Aggiungi una fattura
+      </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-card><app-form-fatture></app-form-fatture></mat-card>
+  </mat-expansion-panel>
+</mat-accordion> -->
+
+
+
+<!-- lista fatture -->
+<mat-card class="listaFatture"*ngFor="let fattura of fatt">
+  <mat-accordion >
   <mat-expansion-panel hideToggle class="addFatture">
     <mat-expansion-panel-header>
       <mat-panel-title class="text-white">
@@ -12,6 +30,7 @@
     <mat-card><app-form-fatture></app-form-fatture></mat-card>
   </mat-expansion-panel>
 </mat-accordion>
+  <ul class="none" >
 
 
 

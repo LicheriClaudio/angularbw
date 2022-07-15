@@ -136,85 +136,13 @@
   ],
   "fatture": [
     {
-      "anno": 28,
-      "cliente": "Do qui laborum eu et",
-      "data": "Quis laboris aut dol",
+      "anno": 78,
+      "cliente": "Ab laborum blanditii",
+      "data": "Inventore nobis maio",
       "importo": null,
       "numero": null,
-      "stato": "Et dolore dolores at",
+      "stato": "Nostrud voluptatibus",
       "id": 1
-    },
-    {
-      "anno": 28,
-      "cliente": "Do qui laborum eu et",
-      "data": "Quis laboris aut dol",
-      "importo": null,
-      "numero": null,
-      "stato": "Et dolore dolores at",
-      "id": 2
-    },
-    {
-      "anno": 29,
-      "cliente": "Debitis magni magna ",
-      "data": "Ipsum cum reiciendi",
-      "importo": null,
-      "numero": null,
-      "stato": "Dolor doloribus rem ",
-      "id": 3
-    },
-    {
-      "anno": 29,
-      "cliente": "Debitis magni magna ",
-      "data": "Ipsum cum reiciendi",
-      "importo": null,
-      "numero": null,
-      "stato": "Dolor doloribus rem ",
-      "id": 4
-    },
-    {
-      "anno": 84,
-      "cliente": "Dolorem molestiae in",
-      "data": "Quia sit velit volu",
-      "importo": null,
-      "numero": null,
-      "stato": "Doloremque in veniam",
-      "id": 5
-    },
-    {
-      "anno": 84,
-      "cliente": "Dolorem molestiae in",
-      "data": "Quia sit velit volu",
-      "importo": null,
-      "numero": null,
-      "stato": "Doloremque in veniam",
-      "id": 6
-    },
-    {
-      "anno": 84,
-      "cliente": "Dolorem molestiae in",
-      "data": "Quia sit velit volu",
-      "importo": null,
-      "numero": null,
-      "stato": "Doloremque in veniam",
-      "id": 7
-    },
-    {
-      "anno": 2022,
-      "cliente": "Velix Spa",
-      "data": "20/04/2022",
-      "importo": 1000,
-      "numero": 1,
-      "stato": "Spagna",
-      "id": 8
-    },
-    {
-      "anno": 2022,
-      "cliente": "Jaime Lannister",
-      "data": "20/04/2022",
-      "importo": 200,
-      "numero": 1,
-      "stato": "pagata",
-      "id": 9
     }
   ],
   "aziende": [
@@ -237,25 +165,6 @@
       "dataInserimento": "",
       "dataUltimoContatto": "",
       "id": 1
-    },
-    {
-      "ragioneSociale": "Sabatino & Di Maria Sas",
-      "partitaIva": "123123123",
-      "pec": "sabatino@pec.it",
-      "telefono": "12345678",
-      "nomeContatto": "Michele",
-      "cognomeContatto": "Sabatino",
-      "telefonoContatto": "12345678",
-      "emailAziendale": "sabatino@gmail.com",
-      "emailContatto": "sabatino@gmail.com",
-      "via": "Roma",
-      "cap": "00000",
-      "civico": "44",
-      "comune": "Pomezia",
-      "provincia": "RM",
-      "dataInserimento": "2014-11-22",
-      "dataUltimoContatto": "2011-06-28",
-      "id": 7
     },
     {
       "ragioneSociale": "Gamble Tech Srl",
@@ -332,6 +241,25 @@
       "dataInserimento": "2008-03-31",
       "dataUltimoContatto": "2022-06-29",
       "id": 12
+    },
+    {
+      "ragioneSociale": "Id repellendus Dese",
+      "partitaIva": "Obcaecati eos quas ",
+      "pec": "Doloribus irure nihi",
+      "telefono": "Qui quos rerum qui e",
+      "nomeContatto": "A in cillum vitae de",
+      "cognomeContatto": "Iure sint non in of",
+      "telefonoContatto": "Sint enim nostrud qu",
+      "emailAziendale": "zakikuvyda@mailinator.com",
+      "emailContatto": "mudabeqow@mailinator.com",
+      "via": "Doloribus ut quod an",
+      "cap": "Error saepe debitis ",
+      "civico": "Quo dolore optio ne",
+      "comune": "Sit aut sed exercita",
+      "provincia": "Voluptatem quis veli",
+      "dataInserimento": "1974-05-02",
+      "dataUltimoContatto": "1983-11-02",
+      "id": 13
     }
   ]
 }

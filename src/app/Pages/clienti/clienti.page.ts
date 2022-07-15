@@ -19,6 +19,14 @@ export class ClientiPage implements OnInit {
   disabled = false;
   error = undefined;
   currentid = 0;
+  cat = 'hello';
+  userData ={
+    ragiona: '',
+    email: '',
+    telefono: '',
+    nome: ''
+  }
+
   
 
   ClientRegisterFormGroup = this._form.group({
@@ -31,6 +39,13 @@ export class ClientiPage implements OnInit {
   });
 
   users: Clienti[] = [];
+  client:any = {
+        ragioneSociale: '',
+        telefono: '',
+        emailAziendale: '',
+        nomeContatto: '',
+        
+  };
   removeselcted = false;
   modifybox = false;
 
@@ -71,6 +86,7 @@ checkremove (id:number) {
   
   this.removeselcted = true;
   this.currentid = id;
+
 }
 
 removeClient() {
@@ -86,7 +102,7 @@ removeClient() {
         },
         // err => {
         //   console.log(err)
-        //   this.error = err.error
+        //   this.error = err.error ciao sono io!
         // }
       )
   })
@@ -96,6 +112,23 @@ removeClient() {
 modifyClient(id:number) {
   this.modifybox = true;
   this.currentid = id;
+  this.userService.authSubject.subscribe(userLogin => {
+    this.http.get('http://localhost:3000/aziende/'+ this.currentid, {
+      headers: new HttpHeaders({ "Authorization": "Bearer " + userLogin?.AccessToken})})
+      .subscribe(
+        resp => {
+          this.client = resp;
+          console.log(this.client.ragioneSociale);
+          this.userData.ragiona = this.client.ragioneSociale;
+          this.userData.telefono = this.client.telefono;
+          this.userData.email = this.client.emailAziendale;
+          this.userData.nome = this.client.nomeContatto;
+          this.getAllclients()
+         
+        }
+        )
+      })
+  
 }
 
 update() {
@@ -109,14 +142,17 @@ close() {
 
 modify() {
   console.log(this.currentid)
+  
+  
   {
  
     this.userService.authSubject.subscribe(userLogin => {
       this.http.put<Clienti[]>('http://localhost:3000/aziende/'+ this.currentid,{
         ragioneSociale: this.form.value.ragioneSociale,
+        telefono: this.form.value.telefono,
         emailAziendale: this.form.value.emailAziendale,
         nomeContatto:this.form.value.nomeContatto,
-        telefono: this.form.value.telefono
+        
     }, {
         headers: new HttpHeaders({ "Authorization": "Bearer " + userLogin?.AccessToken})})
         .subscribe(
@@ -124,6 +160,7 @@ modify() {
             console.log(resp)
             this.getAllclients()
             this.modifybox = false;
+            
           },
           // err => {
           //   console.log(err)

@@ -71,40 +71,95 @@ h1 {
   width: 80%;
 
 
-}
+} */
 #due{
   text-align: center;
-  background-image: url("https://www.robertomaiolino.it/blografik/wp-content/uploads/2017/11/entrepreneur-979861-e1509890417619-768x411.jpg");
+  background-image: url("../../../assets/pexels-ali-pazani-2777898.jpg");
   background-position: center;
   background-size: cover;
 }
 #due2{
   text-align: center;
-  width: 28rem;
-  background-image: url("https://axioma.it/wp-content/uploads/2018/12/i-documenti-nei-processi-aziendali.jpg");
+  width: 15rem;
+  background-image: url("../../../assets/pexels-karolina-grabowska-4475524.jpg");
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
 
+<<<<<<< HEAD
    margin: 0 auto; */
 /* margin-top: 2rem; */
 /*   height: 50rem
+=======
+
+   /* margin: 0 auto; */
+  /* margin-top: 2rem; */
+  height: 50rem
+>>>>>>> ee04b3222fe02fd73da1c9a9ab366acfabeeec9a
 
 }
 #due3{
   text-align: center;
-  width: 28rem;
+  width: 15rem;
 
-  background-image: url("https://wips.plug.it/cips/italiaonline.it/blog/cms/2020/06/mission-aziendale.jpg?w=750&h=422&a=c");
+  background-image: url("../../../assets/pexels-dinielle-de-veyra-4195342.jpg");
+  background-position: center;
+  background-size: cover;
+
+
+   /* margin: 0 auto; */
+  /* margin-top: 2rem; */
+  height: 50rem
+}
+
+#due4{
+  text-align: center;
+  width: 15rem;
+  background-image: url("../../../assets/pexels-kindel-media-6994169\ \(1\).jpg");
+  background-position: center;
+  background-size: cover;
+
+
+
+   /* margin: 0 auto; */
+  /* margin-top: 2rem; */
+  height: 50rem
+
+}
+
+#due5{
+  /* text-align: center; */
+  width: 15rem;
+  background-image: url("../../../assets/pexels-itzyphoto-2901581.jpg");
+  background-position: center;
+  background-size: cover;
+
+
+
+   /* margin: 0 auto; */
+  /* margin-top: 2rem; */
+  height: 50rem
+
+}
+
+#due6{
+  /* text-align: center; */
+  width: 15rem;
+  background-image: url("../../../assets/pexels-violeta-digital-12661189.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
-  flex-direction: column;
 
+<<<<<<< HEAD
    margin: 0 auto; */
 /* margin-top: 2rem; */
 /*   height: 50rem
+=======
+
+   /* margin: 0 auto; */
+  /* margin-top: 2rem; */
+  height: 50rem
+
+>>>>>>> ee04b3222fe02fd73da1c9a9ab366acfabeeec9a
 }
 a{
   text-decoration: none;
@@ -112,9 +167,10 @@ a{
 }
 
 h1{
-  text-align: center;
-  color: rgb(7, 12, 65);
+  /* text-align: center; */
+  color: rgb(255, 255, 255);
  /*  margin-right: 30rem; */
+<<<<<<< HEAD
 /*   margin-top: 14rem;
   font-size: 7rem;
   font-weight: bold;
@@ -126,22 +182,29 @@ h1{
 /* .due {
   display: flex;
   flex-direction: column;
+=======
+  margin-top: 45rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+/* #due {} */
+
+.due {
+>>>>>>> ee04b3222fe02fd73da1c9a9ab366acfabeeec9a
   width: 20rem;
-   margin: 0 auto;
-
-  height: 10rem
+ height: 10rem
 }
 
-#due:hover, #due2:hover,#due3:hover {
-  transform: scale(1.2);
+#due:hover, #due2:hover,#due3:hover,#due4:hover,#due5:hover,#due6:hover {
+  transform: scale(1.1);
 
 }
 
-.mat-card{
-  width: 20rem;
-}
+
 .div{
-
-  justify-content: space-evenly;
+width: 90%;
+ /*  justify-content: space-evenly;*/
   display: flex;
 } */

@@ -51,6 +51,7 @@ export class FormFattureComponent implements OnInit {
       (resp) => {
         console.log(resp);
         this.error = undefined;
+       window.location.reload()
        /*  this.router.navigate(['/login']); */
       },
       err => {

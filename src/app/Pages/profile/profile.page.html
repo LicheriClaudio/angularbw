@@ -1,4 +1,4 @@
-
+<div class="gen">
   <mat-card class="css">
     <mat-card-header><img style="width:40%;  border-radius:15px  " src="https://us.123rf.com/450wm/martialred/martialred1608/martialred160800020/61263273-icona-piatto-account-utente-maschio-profilo-cerchio-per-le-applicazioni-e-siti-web.jpg?ver=6" alt=""></mat-card-header>
     <h1>PROFILO</h1>
@@ -10,10 +10,10 @@
 
     </div>
   </mat-card>
-<mat-card class="css">
-  <ul *ngFor="let users of prs">
-    <li>{{prs | json}}</li>
+<mat-card class="css2">
+  <ul *ngFor="let users1 of users">
+    <li>{{users1.firstname}}  {{users1.lastname}}<br><span>{{users1.email}}   {{users1.role}}</span></li>
   </ul>
 </mat-card>
 
-
+</div>
