@@ -16,8 +16,9 @@
 
 
 <!-- lista fatture -->
-<mat-card class="listaFatture">
-  <ul class="none" *ngFor="let fattura of fatt">
+<mat-card class="listaFatture"*ngFor="let fattura of fatt">
+  <ul class="none" >
+
     <li >
       {{fattura.anno}}--{{fattura.cliente}}--{{fattura.data}}--{{fattura.importo}}--{{fattura.numero}}--{{fattura.stato}}
   <mat-card-actions><button (click)="removeFatture(fattura.id)">Remove</button>
