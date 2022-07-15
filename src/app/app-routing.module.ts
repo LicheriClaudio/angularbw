@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { GuardGuard } from './auth-m/guard.guard';
 import { LoginPage } from './auth-m/login/login.page';
 import { RegisterPage } from './auth-m/register/register.page';
+import { FormFattureComponent } from './component/form-fatture/form-fatture.component';
 import { FormRegisterclientiComponent } from './component/form-registerclienti/form-registerclienti.component';
 import { AboutusPage } from './Pages/aboutus/aboutus.page';
 import { ClientiPage } from './Pages/clienti/clienti.page';
@@ -12,6 +13,11 @@ import { HomePage } from './Pages/home/home.page';
 import { ProfilePage } from './Pages/profile/profile.page';
 
 const routes: Routes = [
+
+  {
+    path:'app-form-registerclienti',
+    component: FormFattureComponent
+  },
   {
     path: 'fatture',
     /* canActivate: [GuardGuard], */

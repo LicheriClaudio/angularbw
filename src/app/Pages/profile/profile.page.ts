@@ -20,7 +20,7 @@ export class ProfilePage implements OnInit {
   hidden2 = false;
   switch = false;
   local = localStorage.getItem('isAuthenticated');
-  prs:any = undefined
+  prs:any = undefined;
   constructor(
     private Serviceservice: ServiceService,
     private http: HttpClient
@@ -57,7 +57,7 @@ export class ProfilePage implements OnInit {
       this.http
         .get<Iusers[]>('http://localhost:3000/users', {
           headers: new HttpHeaders({
-            "Authorization": 'Bearer ' + this.prs.accessToken,
+            "Authorization": 'Bearer ' + this.prs.AccessToken,
           }),
         })
         .subscribe(
