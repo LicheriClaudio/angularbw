@@ -6,22 +6,22 @@
       <mat-form-field appearance="fill">
         <mat-label>Ragione Sociale</mat-label>
         <input matInput type="text" formControlName="ragioneSociale" class="form-control" placeholder="Insert Ragione Sociale" required>
-        <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['ragioneSociale'].dirty && ClientRegisterFormGroup.hasError('required', 'ragioneSociale')">*L'username è obbligatorio!</span>
+        <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['ragioneSociale'].dirty && ClientRegisterFormGroup.hasError('required', 'ragioneSociale')">*La ragione Sociale è obbligatorio!</span>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Partita Iva</mat-label>
         <input matInput type="text" formControlName="partitaIva" class="form-control" placeholder="Partita Iva" required>
-        <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['partitaIva'].dirty && ClientRegisterFormGroup.hasError('required', 'partitaIva')">*L'username è obbligatorio!</span>
+        <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['partitaIva'].dirty && ClientRegisterFormGroup.hasError('required', 'partitaIva')">*La Partita IVA è obbligatoria!</span>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Pec</mat-label>
         <input matInput type="text" formControlName="pec" class="form-control" placeholder="Insert Pec" required>
-        <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['pec'].dirty && ClientRegisterFormGroup.hasError('required', 'pec')">*L'username è obbligatorio!</span>
+        <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['pec'].dirty && ClientRegisterFormGroup.hasError('required', 'pec')">*La pec è obbligatoria!</span>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Telefono</mat-label>
         <input matInput type="text" formControlName="telefono" class="form-control" placeholder="Insert Telefono" required>
-        <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['telefono'].dirty && ClientRegisterFormGroup.hasError('required', 'telefono')">*L'username è obbligatorio!</span>
+        <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['telefono'].dirty && ClientRegisterFormGroup.hasError('required', 'telefono')">*Il telefono è obbligatorio!</span>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Email</mat-label>
