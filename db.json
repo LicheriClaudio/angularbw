@@ -127,87 +127,13 @@
   ],
   "fatture": [
     {
-
-      "anno": 28,
-      "cliente": "Do qui laborum eu et",
-      "data": "Quis laboris aut dol",
+      "anno": 1,
+      "cliente": "Voluptatibus omnis d",
+      "data": "Aspernatur sed moles",
       "importo": null,
       "numero": null,
-      "stato": "Et dolore dolores at",
-
+      "stato": "Veniam delectus qu",
       "id": 1
-    },
-    {
-      "anno": 28,
-      "cliente": "Do qui laborum eu et",
-      "data": "Quis laboris aut dol",
-      "importo": null,
-      "numero": null,
-      "stato": "Et dolore dolores at",
-      "id": 2
-    },
-    {
-      "anno": 29,
-      "cliente": "Debitis magni magna ",
-      "data": "Ipsum cum reiciendi",
-      "importo": null,
-      "numero": null,
-      "stato": "Dolor doloribus rem ",
-      "id": 3
-    },
-    {
-      "anno": 29,
-      "cliente": "Debitis magni magna ",
-      "data": "Ipsum cum reiciendi",
-      "importo": null,
-      "numero": null,
-      "stato": "Dolor doloribus rem ",
-      "id": 4
-    },
-    {
-      "anno": 84,
-      "cliente": "Dolorem molestiae in",
-      "data": "Quia sit velit volu",
-      "importo": null,
-      "numero": null,
-      "stato": "Doloremque in veniam",
-      "id": 5
-    },
-    {
-      "anno": 84,
-      "cliente": "Dolorem molestiae in",
-      "data": "Quia sit velit volu",
-      "importo": null,
-      "numero": null,
-      "stato": "Doloremque in veniam",
-      "id": 6
-    },
-    {
-      "anno": 84,
-      "cliente": "Dolorem molestiae in",
-      "data": "Quia sit velit volu",
-      "importo": null,
-      "numero": null,
-      "stato": "Doloremque in veniam",
-      "id": 7
-    },
-    {
-      "anno": 2022,
-      "cliente": "Velix Spa",
-      "data": "20/04/2022",
-      "importo": 1000,
-      "numero": 1,
-      "stato": "Spagna",
-      "id": 8
-    },
-    {
-      "anno": 2022,
-      "cliente": "Jaime Lannister",
-      "data": "20/04/2022",
-      "importo": 200,
-      "numero": 1,
-      "stato": "pagata",
-      "id": 9
     }
   ],
   "aziende": [
