@@ -49,6 +49,7 @@ export class FatturePage implements OnInit {
           (resp) => {
             console.log(resp);
             this.fatt = resp;
+            
           },
           (err) => {
             console.log(err);
