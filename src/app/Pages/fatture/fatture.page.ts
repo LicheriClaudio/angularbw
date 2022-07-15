@@ -15,6 +15,17 @@ export class FatturePage implements OnInit {
   cambio = false;
   private urlJsonServer = 'http://localhost:3000';
   error = undefined;
+  fatturaData ={
+    anno: '',
+    cliente: '',
+    data: '',
+    importo: '',
+    numero: '',
+    stato: ''
+  }
+
+  modifybox = false;
+
   RegisterFormGroup = this._form.group({
     anno: ['', Validators.required],
     cliente: ['', Validators.required],
@@ -25,6 +36,8 @@ export class FatturePage implements OnInit {
   });
 
   cambio2 = false;
+  currentid: number | undefined;
+  fattura: any | undefined;
   constructor(
     private serviceService: ServiceService,
     private http: HttpClient,
@@ -129,6 +142,30 @@ export class FatturePage implements OnInit {
   close() {
     this.cambio = false;
     this.cambio2 = false;
+  }
+
+  modifyFattura(id:number) {
+    this.cambio = true;
+    this.currentid = id;
+    this.serviceService.authSubject.subscribe(userLogin => {
+      this.http.get('http://localhost:3000/fatture/'+ this.currentid, {
+        headers: new HttpHeaders({ "Authorization": "Bearer " + userLogin?.AccessToken})})
+        .subscribe(
+          resp => {
+            this.fattura = resp;
+            
+            this.fatturaData.anno = this.fattura.anno;
+            this.fatturaData.cliente = this.fattura.cliente;
+            this.fatturaData.data = this.fattura.data;
+            this.fatturaData.importo = this.fattura.importo;
+            this.fatturaData.numero = this.fattura.numero;
+            this.fatturaData.stato = this.fattura.stato;
+            this.getAllFatture()
+           
+          }
+          )
+        })
+    
   }
 
 

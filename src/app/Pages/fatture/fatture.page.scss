@@ -9,24 +9,28 @@
 
 
 .listaFatture{
-  width: 80%;
+  width: 800px;
   margin: 0 auto;
 
 }
 .addFatture{
-  margin: 0 auto;
-  background-color: green;
+  margin: 0 auto 2em;
+  background-color: #198754;
   width: 50%;
+  color: #fff;
 }
 #fatture{
+  padding-top: 2em;
   width: 50%;
   margin: 0 auto;
   align-items: center;
   text-align: center;
 }
-
-.none{
-  list-style: none;
+.bord{
+  border: 1px solid #d7d7d7;
+  border-radius: 1em;
+  padding: 2em 1em;
+  margin: 1em 0;
 }
 
 .register {

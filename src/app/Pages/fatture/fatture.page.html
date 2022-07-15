@@ -20,11 +20,11 @@
   <mat-accordion >
   <mat-expansion-panel hideToggle class="addFatture">
     <mat-expansion-panel-header>
-      <mat-panel-title>
+      <mat-panel-title class="text-white">
         Aggiungi una fattura
       </mat-panel-title>
       <mat-panel-description>
-        This is a summary of the content
+        <mat-icon class="text-white">expand_more</mat-icon>
       </mat-panel-description>
     </mat-expansion-panel-header>
     <mat-card><app-form-fatture></app-form-fatture></mat-card>
@@ -32,14 +32,19 @@
 </mat-accordion>
   <ul class="none" >
 
-    <li >
+
+
+<!-- lista fatture -->
+<mat-card class="listaFatture overflow-hidden">
+  <div class="row row-cols-3 g-4 px-4">
+    <div class="bord col px-4" *ngFor="let fattura of fatt">
       {{fattura.anno}}--{{fattura.cliente}}--{{fattura.data}}--{{fattura.importo}}--{{fattura.numero}}--{{fattura.stato}}
-  <mat-card-actions><button (click)="removeFatture(fattura.id)" class="btn2"><i class="bi bi-trash"></i></button>
-  <button mat-button (click)="modifyF(fattura.id)" class="btn"><i class="bi bi-pencil-square"></i></button></mat-card-actions>
-    </li>
-  </ul>
+  <div class="pt-3 "><button class="btn btn-danger" (click)="removeFatture(fattura.id)">Remove</button>
+  <button class="btn btn-warning ms-3" (click)="modifyF(fattura.id)">Modify</button></div>
+  </div>
+  </div>
 </mat-card>
-</div>
+
 
 
 <!-- ------------------------------------------------- -->
