@@ -14,7 +14,7 @@ indirizzoSedeOperativa: IndirizzoSede
 nomeContatto: string;
 partitaIva: string;
 pec: string;
-ragioneSociale: string;
+ragioneSociale?: string;
 telefono: string;
 telefonoContatto: string;
 tipoCliente: string;

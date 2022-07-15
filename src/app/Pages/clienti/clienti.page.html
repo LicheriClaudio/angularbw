@@ -40,22 +40,22 @@
                     <div>
                   <mat-form-field appearance="fill">
                     <mat-label>Ragione Sociale</mat-label>
-                    <input matInput type="text" formControlName="ragioneSociale" class="form-control" placeholder="Insert Ragione Sociale" required>
+                    <input  matInput [ngModel]= "userData.ragiona" type="text" formControlName="ragioneSociale" class="form-control" placeholder="Insert Ragione Sociale" required >
                     <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['ragioneSociale'].dirty && ClientRegisterFormGroup.hasError('required', 'ragioneSociale')">*L'username è obbligatorio!</span>
                   </mat-form-field>
                   <mat-form-field appearance="fill">
                     <mat-label>Telefono</mat-label>
-                    <input matInput type="text" formControlName="telefono" class="form-control" placeholder="Insert Telefono" required>
+                    <input matInput [ngModel]= "userData.telefono"type="text" formControlName="telefono" class="form-control" placeholder="Insert Telefono" required>
                     <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['telefono'].dirty && ClientRegisterFormGroup.hasError('required', 'telefono')">*L'username è obbligatorio!</span>
                   </mat-form-field>
                   <mat-form-field appearance="fill">
                     <mat-label>Email</mat-label>
-                    <input matInput type="email" formControlName="emailAziendale" class="form-control" placeholder="Insert Email" required>
+                    <input matInput [ngModel]= "userData.email" type="email" formControlName="emailAziendale" class="form-control" placeholder="Insert Email" required>
                     <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['emailAziendale'].dirty && ClientRegisterFormGroup.hasError('required', 'emailAziendale')">*L'username è obbligatorio!</span>
                   </mat-form-field>
                   <mat-form-field appearance="fill">
                     <mat-label>Nome Contatto</mat-label>
-                    <input matInput type="text" formControlName="nomeContatto" class="form-control" placeholder="Insert Nome" required>
+                    <input matInput [ngModel]= "userData.nome" type="text" formControlName="nomeContatto" class="form-control" placeholder="Insert Nome" required>
                     <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['nomeContatto'].dirty && ClientRegisterFormGroup.hasError('required', 'nomeContatto')">*L'username è obbligatorio!</span>
                   </mat-form-field>
                   <button mat-button color="accent" [disabled]="!ClientRegisterFormGroup.valid" type="submit" style="width : 10em; height: 3em;">Submit</button>
