@@ -123,71 +123,76 @@
       "lastname": "Lannisterr",
       "role": "user",
       "id": 14
-    },
-    {
-      "email": "gianni@gmail.com",
-      "password": "$2a$10$Q2XLl5tIkdNRNzOv/pHi5eCet7ksIqM8s5nASHKFtpF1gqiTVW7Vy",
-      "username": "Gianni77",
-      "firstname": "Giovanni",
-      "lastname": "Migliorini",
-      "role": "user",
-      "id": 15
     }
   ],
   "fatture": [
     {
-<<<<<<< HEAD
-      "anno": 28,
-      "cliente": "Do qui laborum eu et",
-      "data": "Quis laboris aut dol",
+      "anno": 78,
+      "cliente": "Ab laborum blanditii",
+      "data": "Inventore nobis maio",
       "importo": null,
       "numero": null,
-      "stato": "Et dolore dolores at",
-=======
-      "anno": 1,
-      "cliente": "Voluptatibus omnis d",
-      "data": "Aspernatur sed moles",
-      "importo": null,
-      "numero": null,
-      "stato": "Veniam delectus qu",
->>>>>>> 2d5a9ee2a9ee70479c9a34fddaab7a6753d165e8
+      "stato": "Nostrud voluptatibus",
       "id": 1
     }
   ],
   "aziende": [
     {
       "ragioneSociale": "Bruno-Romano SPA",
-      "emailAziendale": "armando.martinelli@hotmail.com",
-      "nomeContatto": "Sarita Serr ",
-      "telefono": "+38 855 62 44 5685 ",
+      "partitaIva": "14812266616",
+      "pec": "antonio.damico@gmail.com",
+      "telefono": "+38 855 62 44 5685",
+      "email": "rosalino.caruso@gmail.com",
+      "nomeContatto": "Sarita",
+      "cognomeContatto": "Serr",
+      "telefonoContatto": "380.260.3225",
+      "emailContatto": "armando.martinelli@hotmail.com",
+      "via": "Contrada Gastone 4, Piano 4",
+      "cap": "38615",
+      "civico": "698",
+      "localita": "Vania del friuli",
+      "comune": "LASTRA A SIGNA",
+      "provincia": "FIRENZE",
+      "dataInserimento": "",
+      "dataUltimoContatto": "",
       "id": 1
     },
     {
-      "ragioneSociale": "Sabatino & Di Maria Sas",
-      "emailAziendale": "dimaria@gmail.com",
-      "nomeContatto": "Michele Sabatino",
-      "telefono": "22222222",
-      "id": 7
-    },
-    {
-<<<<<<< HEAD
-      "ragioneSociale": "New Robotics SRL",
-      "telefono": "+39 876 7896",
-      "emailAziendale": "jsmith@gmail.com",
-      "nomeContatto": "John Smith",
-=======
-      "ragioneSociale": "Gambe Tech Srl",
-      "emailAziendale": "gamble@gmail.com",
-      "nomeContatto": "Manuela Verri",
+      "ragioneSociale": "Gamble Tech Srl",
+      "partitaIva": "00000000000",
+      "pec": "gamble@pec.it",
       "telefono": "12345678",
->>>>>>> 2d5a9ee2a9ee70479c9a34fddaab7a6753d165e8
+      "nomeContatto": "Teo",
+      "cognomeContatto": "Verri",
+      "telefonoContatto": "12345678",
+      "emailAziendale": "gamble@gmail.com",
+      "emailContatto": "verriteo90@gmail.com",
+      "via": "Merulana ",
+      "cap": "000000",
+      "civico": "3",
+      "comune": "Roma",
+      "provincia": "RM",
+      "dataInserimento": "2006-12-12",
+      "dataUltimoContatto": "2022-02-02",
       "id": 8
     },
     {
-      "ragioneSociale": "Art2.com",
-      "telefono": "+44 567 8752",
-      "emailAziendale": "Jim@art.com",
-      "nomeContatto": "Jim Busby",
+      "ragioneSociale": "Benedetti Snc",
+      "partitaIva": "00000000",
+      "pec": "benedetti@pec.it",
+      "telefono": "123456789",
+      "nomeContatto": "Giovanni",
+      "cognomeContatto": "Benedetti",
+      "telefonoContatto": "123456789",
+      "emailAziendale": "dibenedetti@gmail.com",
+      "emailContatto": "giobenedetti@gmail.com",
+      "via": "Roma",
+      "cap": "33333",
+      "civico": "65",
+      "comune": "Mentana",
+      "provincia": "RM",
+      "dataInserimento": "2022-01-01",
+      "dataUltimoContatto": "2022-07-12",
       "id": 9
     },
     {
@@ -210,11 +215,42 @@
       "id": 11
     },
     {
-      "ragioneSociale": "Velix SA",
-      "emailAziendale": "Velix@gmail.com",
-      "nomeContatto": "Antonio Cruz",
-      "telefono": "22222222",
+      "ragioneSociale": "Velix Spa",
+      "partitaIva": "00000000",
+      "pec": "velix@amministracion.es",
+      "telefono": "123123123",
+      "nomeContatto": "Antonio",
+      "cognomeContatto": "Cruz",
+      "telefonoContatto": "123123123",
+      "emailAziendale": "velix@gmail.com",
+      "emailContatto": "cruz@velix.com",
+      "via": "Miguel de Unamuno",
+      "cap": "33333",
+      "civico": "200",
+      "comune": "Valladolid",
+      "provincia": "Valladolid",
+      "dataInserimento": "2008-03-31",
+      "dataUltimoContatto": "2022-06-29",
       "id": 12
+    },
+    {
+      "ragioneSociale": "Id repellendus Dese",
+      "partitaIva": "Obcaecati eos quas ",
+      "pec": "Doloribus irure nihi",
+      "telefono": "Qui quos rerum qui e",
+      "nomeContatto": "A in cillum vitae de",
+      "cognomeContatto": "Iure sint non in of",
+      "telefonoContatto": "Sint enim nostrud qu",
+      "emailAziendale": "zakikuvyda@mailinator.com",
+      "emailContatto": "mudabeqow@mailinator.com",
+      "via": "Doloribus ut quod an",
+      "cap": "Error saepe debitis ",
+      "civico": "Quo dolore optio ne",
+      "comune": "Sit aut sed exercita",
+      "provincia": "Voluptatem quis veli",
+      "dataInserimento": "1974-05-02",
+      "dataUltimoContatto": "1983-11-02",
+      "id": 13
     }
   ]
 }
