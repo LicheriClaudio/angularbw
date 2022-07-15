@@ -114,6 +114,15 @@
       "lastname": "Cunningham",
       "role": "Illo eos qui soluta ",
       "id": 13
+    },
+    {
+      "email": "jaime@gmail.com",
+      "password": "$2a$10$GuagCFz2jvfpbibARUsexO64.lPoT1rwA9iG8vi91HUB3hwizemOS",
+      "username": "Jaime96",
+      "firstname": "Jaime",
+      "lastname": "Lannisterr",
+      "role": "user",
+      "id": 14
     }
   ],
   "fatture": [
@@ -188,6 +197,15 @@
       "numero": 1,
       "stato": "Spagna",
       "id": 8
+    },
+    {
+      "anno": 2022,
+      "cliente": "Jaime Lannister",
+      "data": "20/04/2022",
+      "importo": 200,
+      "numero": 1,
+      "stato": "pagata",
+      "id": 9
     }
   ],
   "aziende": [

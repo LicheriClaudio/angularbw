@@ -19,8 +19,9 @@ export class ServiceService {
   reg: Ireg[] = [];
   fatt: Fattura[] = [];
   error = undefined;
+
   constructor(private http: HttpClient, private router: Router) {
-     this.restoreUserLogin()
+    this.restoreUserLogin();
   }
 
   getAllUsers() {
@@ -107,11 +108,12 @@ export class ServiceService {
     return this.http.post(this.urlJsonServer + '/fatture', obj);
   }
 
+  signclient(obj: Clienti) {
+    return this.http.post(this.urlJsonServer + '/aziende', obj);
+  }
 
 
-signclient(obj: Clienti) {
-  return this.http.post(this.urlJsonServer+'/aziende', obj);
-}
+
 
 
 removeclient(id:number){
@@ -124,6 +126,9 @@ removeclient(id:number){
 
 }
 
+modifyclient(id:number, cliente:any){
+  return this.http.put<Clienti>(this.urlJsonServer+'/aziende/', cliente);
+}
 
 
 }
