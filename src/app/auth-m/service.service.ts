@@ -72,6 +72,8 @@ export class ServiceService {
     return this.http.post(this.urlJsonServer + '/register', obj);
   }
 
+
+
   logout() {
     console.log('Logout');
     this.authSubject.next(null);

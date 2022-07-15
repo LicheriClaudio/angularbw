@@ -4,6 +4,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { Iusers } from 'src/app/auth-m/interface/iusers';
 import { ServiceService } from 'src/app/auth-m/service.service';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 
@@ -15,32 +16,33 @@ import { NgForm } from '@angular/forms';
 })
 export class AboutusPage implements OnInit {
   tiles: Tile[] = [
-    {text: 'DICONO DI NOI', cols: 2, rows: 1, color: ''},
+    {text: 'DICONO DI NOI', cols: 2, rows: 1, color: '', },
+
    // {text: 'lorem ipsum dolor sit amet, consectetur adipiscing el', cols: 3, rows: 1, color: 'lightblue'},
 
   ];
 
-/*
-  @ViewChild('f') form!: NgForm;
-  private _form!: NgForm;
-  public get form(): NgForm {
-    return this._form;
-  }
-  public set form(value: NgForm) {
-    this._form = value;
-  }
+
+/*   @ViewChild('f') form!: NgForm;
+
 
   Commenti = this._form.group({
     comment:[''],
-   });*/
+   }); */
+
+   @ViewChild('f') form!: NgForm;
+   error = undefined;
 
 
 
   customer='';
   user:Iusers[] = [];
+  Commenti:string[] = [];
+
 
   constructor(private Serviceservice: ServiceService,
-              private http: HttpClient
+              private http: HttpClient,
+              private router: Router
     ) {
 
   }
@@ -52,16 +54,35 @@ export class AboutusPage implements OnInit {
 
   }
 
+  onSubmit() {
+    console.log(this.form.value)
+    this.Commenti.push(this.form.value);
+
+
+
+/*       this.Serviceservice.Commenti(this.form.value).subscribe(
+        resp => {
+          console.log(resp);
+          this.error = undefined;
+          this.router.navigate(['/clienti_request'])
+        },
+        err  => {
+          console.log(err.error);
+          this.error = err.error;
+        }
+      ) */
+
 
 
 
 }
+
+}
+
 
 export interface Tile {
   color: string;
   cols: number;
   rows: number;
   text: string;
-}
-
-
+  }
