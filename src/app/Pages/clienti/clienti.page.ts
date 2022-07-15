@@ -27,6 +27,7 @@ export class ClientiPage implements OnInit {
     nomeContatto: ['', Validators.required],
     emailAziendale: ['', Validators.required],
 
+
   });
 
   users: Clienti[] = [];
