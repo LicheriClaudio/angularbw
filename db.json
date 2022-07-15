@@ -179,6 +179,15 @@
       "numero": null,
       "stato": "Doloremque in veniam",
       "id": 7
+    },
+    {
+      "anno": 2022,
+      "cliente": "Velix Spa",
+      "data": "20/04/2022",
+      "importo": 1000,
+      "numero": 1,
+      "stato": "Spagna",
+      "id": 8
     }
   ],
   "aziende": [
@@ -277,6 +286,25 @@
       "dataInserimento": "2006-12-11",
       "dataUltimoContatto": "2022-02-23",
       "id": 11
+    },
+    {
+      "ragioneSociale": "Velix Spa",
+      "partitaIva": "00000000",
+      "pec": "velix@amministracion.es",
+      "telefono": "123123123",
+      "nomeContatto": "Antonio",
+      "cognomeContatto": "Cruz",
+      "telefonoContatto": "123123123",
+      "emailAziendale": "velix@gmail.com",
+      "emailContatto": "cruz@velix.com",
+      "via": "Miguel de Unamuno",
+      "cap": "33333",
+      "civico": "200",
+      "comune": "Valladolid",
+      "provincia": "Valladolid",
+      "dataInserimento": "2008-03-31",
+      "dataUltimoContatto": "2022-06-29",
+      "id": 12
     }
   ]
 }
