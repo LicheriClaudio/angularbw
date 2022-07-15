@@ -57,7 +57,7 @@ export class ProfilePage implements OnInit {
       this.http
         .get<Iusers[] | any>('http://localhost:3000/users', {
           headers: new HttpHeaders({
-            "Authorization": 'Bearer ' + this.prs.AccessToken,
+            "Authorization": 'Bearer ' + localStorage?.AccessToken,
           }),
         })
         .subscribe(
