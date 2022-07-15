@@ -15,7 +15,7 @@
 
 <mat-card *ngFor="let tile of tiles">
 
-<p><b>{{customer}}</b>
+<p><b>{{customer}}:</b>
   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
   Error, fugiat nobis saepe aut minima natus minus incidunt
   repudiandae eum perferendis laborum sed deleniti sequi ipsa
@@ -25,11 +25,12 @@
  </mat-card>
 
 
- <mat-form-field class="example-full-width" appearance="fill">
+ <mat-form-field  class="example-full-width" appearance="fill"     >
   <mat-label>Leave a comment</mat-label>
-  <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+  <textarea formControlName="comment" matInput placeholder="Ex. It makes me feel..."></textarea>
   <button mat-button>Pubblica</button>
 
 </mat-form-field>
 
 
+                        <!--riga28 [formGroup]="Commenti"              #f="ngForm"       (ngSubmit)="modify()" -->

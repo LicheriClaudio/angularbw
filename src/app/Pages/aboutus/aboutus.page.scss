@@ -11,10 +11,11 @@ mat-grid-tile{
 
 mat-card{
   color: rgb(0, 0, 0);
-  width: 22rem;
-  height: 6rem;
+  width: 20rem;
+  height: auto;
   text-align:center;
-  margin: 8rem auto;
+  margin: 6rem auto;
+  overflow: hidden;
   background-color: rgba(240, 248, 255, 0.862);
 }
 
@@ -24,6 +25,7 @@ mat-form-field{
   width: 22rem;
   height: 6rem;
   text-align:center;
-  margin-left: 42em;
+  margin-left:63rem;
+  margin-top: 15rem;
   background-color: rgba(240, 248, 255, 0.862);
 }
