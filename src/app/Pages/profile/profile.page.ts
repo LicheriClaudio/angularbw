@@ -14,7 +14,7 @@ export class ProfilePage implements OnInit {
   utente = '';
   use = 'ciao ';
   error = undefined;
-  users: Iusers[] = [];
+  users: any | Iusers[] = [];
   listF: Fattura[] = [];
   hidden = false;
   hidden2 = false;
@@ -53,17 +53,17 @@ export class ProfilePage implements OnInit {
 
   getAllUsers() {
     console.log('Chiamata Ajax al server');
-    this.authSubject.subscribe(() => {
+    this.authSubject.subscribe((localStorage) => {
       this.http
-        .get<Iusers[]>('http://localhost:3000/users', {
+        .get<Iusers[] | any>('http://localhost:3000/users', {
           headers: new HttpHeaders({
-            "Authorization": 'Bearer ' + this.prs.accessToken,
+            "Authorization": 'Bearer ' + localStorage?.AccessToken,
           }),
         })
         .subscribe(
           (resp) => {
             console.log(resp);
-            this.prs = resp;
+            this.users = resp;
           },
           (err) => {
             console.log(err);
