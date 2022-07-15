@@ -4,14 +4,30 @@ li {
   font-weight: bold;
 }
 
-
  #bottoni{
   float: left;
   width:20rem;
   height: 100%;
   background: linear-gradient(132deg, rgba(0, 19, 56, 0.266) 0.00%, rgba(2, 98, 98, 0.3) 100.00%);
 }
-button {
+a{
+  color: #535353;
+  text-decoration: none;
+}
+
+.btn{
+  width: 100%;
+  border-radius: 1.1em;
+  a{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+router-link-active{
+  border-bottom: 1px solid #535353;
+}
+/* button {
   background-color: rgba(28, 99, 154, 0.889);
   border-radius: 30px;
 
@@ -87,4 +103,4 @@ a.activeLog {
 background-color: green;
 size: 2rem;
 
-}
+} */

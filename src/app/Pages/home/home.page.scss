@@ -1,3 +1,52 @@
+.container {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.row{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  transform: rotate(90deg);
+
+  font-size: 3rem;
+  margin: 5em 0
+}
+#due {
+  display: block;
+  height: 100vh;
+  text-align: center;
+  background-color: #ffffff84;
+  background-blend-mode: screen;
+  background-image: url("https://www.robertomaiolino.it/blografik/wp-content/uploads/2017/11/entrepreneur-979861-e1509890417619-768x411.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#due2 {
+  display: block;
+  height: 100vh;
+  text-align: center;
+  background-color: #ffffff84;
+  background-blend-mode: screen;
+  background-image: url("https://axioma.it/wp-content/uploads/2018/12/i-documenti-nei-processi-aziendali.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#due3 {
+  display: block;
+  height: 100vh;
+  text-align: center;
+  background-color: #ffffff84;
+  background-image: url("https://wips.plug.it/cips/italiaonline.it/blog/cms/2020/06/mission-aziendale.jpg?w=750&h=422&a=c");
+  background-position: center;
+  background-blend-mode: screen;
+  background-size: cover;
+}
+
 /* mat{
 /* *{
   color: rgb(0, 0, 0);
@@ -8,18 +57,16 @@
  background-color: rgb(240, 248, 255);
 } */
 
-
-
-#due {
+/* #due {
 
   width: 28rem;
-  margin: 0 auto;
-  /* margin-top: 2rem; */
-  height: 50rem;
-   background: rgb(15,112,0);
+  margin: 0 auto; */
+/* margin-top: 2rem; */
+/*   height: 50rem;
+   background: rgb(15,112,0); */
 /* background: linear-gradient(90deg, rgba(15,112,0,0.8099614845938375) 0%, rgba(15,112,0,0.8127626050420168) 36%, rgba(255,255,255,0.8407738095238095) 37%, rgba(255,255,255,1) 69%, rgba(223,35,35,0.7791491596638656) 70%, rgba(198,67,38,0.8211659663865546) 100%);;
  */
-background: linear-gradient(132deg, rgb(1, 96, 105) 0.00%, rgb(0, 72, 95) 100.00%);}
+/* background: linear-gradient(132deg, rgb(1, 96, 105) 0.00%, rgb(0, 72, 95) 100.00%);}
 #due img {
   width: 80%;
 
@@ -40,9 +87,9 @@ background: linear-gradient(132deg, rgb(1, 96, 105) 0.00%, rgb(0, 72, 95) 100.00
   display: flex;
   flex-direction: column;
 
-   margin: 0 auto;
-  /* margin-top: 2rem; */
-  height: 50rem
+   margin: 0 auto; */
+/* margin-top: 2rem; */
+/*   height: 50rem
 
 }
 #due3{
@@ -55,9 +102,9 @@ background: linear-gradient(132deg, rgb(1, 96, 105) 0.00%, rgb(0, 72, 95) 100.00
   display: flex;
   flex-direction: column;
 
-   margin: 0 auto;
-  /* margin-top: 2rem; */
-  height: 50rem
+   margin: 0 auto; */
+/* margin-top: 2rem; */
+/*   height: 50rem
 }
 a{
   text-decoration: none;
@@ -68,15 +115,15 @@ h1{
   text-align: center;
   color: rgb(7, 12, 65);
  /*  margin-right: 30rem; */
-  margin-top: 14rem;
+/*   margin-top: 14rem;
   font-size: 7rem;
   font-weight: bold;
   text-decoration: none;
-  transform: rotate(90deg);
-}
+  transform: rotate(90deg); */
+/* } */
 /* #due {} */
 
-.due {
+/* .due {
   display: flex;
   flex-direction: column;
   width: 20rem;
@@ -97,6 +144,4 @@ h1{
 
   justify-content: space-evenly;
   display: flex;
-}
-
-
+} */

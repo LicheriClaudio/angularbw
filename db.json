@@ -123,6 +123,15 @@
       "lastname": "Lannisterr",
       "role": "user",
       "id": 14
+    },
+    {
+      "email": "m.amantia@gmail.it",
+      "password": "$2a$10$qA4DwanJoWISugFo9FmuqeXZHT6lYFtoOeCvRO6mvkQo/eh8KkUyu",
+      "username": "Matteo79",
+      "firstname": "Matteo",
+      "lastname": "Amantia",
+      "role": "user",
+      "id": 15
     }
   ],
   "fatture": [
