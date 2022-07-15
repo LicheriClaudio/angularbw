@@ -1,9 +1,14 @@
-<body> 
-    <h1>Clienti</h1>
-        <div class="box">
+<body>
+  <div class="box row row-cols-3">
+          <h1>Clienti</h1>
             <mat-card *ngFor="let item of users" class="example-card" >
+<<<<<<< HEAD
                 
              
+=======
+                <mat-card-header>
+
+>>>>>>> 139790a116cad081b5e37e09e7b6674899403585
                 <mat-card-title>{{item.ragioneSociale}}</mat-card-title>
                 
                 <mat-card-content>
@@ -14,29 +19,29 @@
                     <br>
                     Telefono Aziendale: {{item.telefono}}
                     <br>
-                    Email: {{item.emailAziendale}} 
+                    Email: {{item.emailAziendale}}
                     <br>
-                    Tel: {{item.telefono}} 
+                    Tel: {{item.telefono}}
                 </p>
                 </mat-card-content>
                 <mat-card-actions>
                     <button mat-button (click)="modifyClient(item.id)">Modify</button>
-                    <button mat-button (click)="checkremove(item.id)">Remove</button> 
+                    <button mat-button (click)="checkremove(item.id)">Remove</button>
                     <!-- <button mat-button (click)="removeClient(item.id)">Remove</button> -->
                   </mat-card-actions>
             </mat-card>
             <section>
                 {{error}}
             </section>
-        </div>   
+        </div>
 
         <div *ngIf="modifybox === true">
-            
+
             <div class="modify">
                 <h1>Modify Profile</h1>
-                
+
                 <form [formGroup]="ClientRegisterFormGroup" class="register" #f="ngForm" (ngSubmit)="modify()">
-                   
+
                     <div>
                   <mat-form-field appearance="fill">
                     <mat-label>Ragione Sociale</mat-label>
@@ -69,12 +74,12 @@
 
 
          <!-- <button mat-button (click)="update()">Update</button> -->
-         
+
         </div>
               </div>
 
         <div *ngIf="removeselcted === true">
-            
+
             <div class="modify">
                 <h1>Are you sure you wish to remove this User?</h1>
                 <button (click)="removeClient()">Yes, Remove</button>
@@ -82,7 +87,7 @@
             </div>
         </div>
 
-                   
-</body> 
+
+</body>
 
 

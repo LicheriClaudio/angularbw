@@ -8,10 +8,15 @@
 
 h1 {
     text-align: center;
+    font-size: 3rem;
+    padding-top: 1em;
     margin-left: 33%;
     margin-right: 33%;
     width: 25%;
     color:white;
+}
+.example-card{
+  width: 250px;
 }
 
 div {
@@ -31,10 +36,10 @@ mat-card {
     border: 1px solid white;
     color: white;
     height: 350px;
-    width: 200px;
+   /*  width: 200px; */
     border-radius: 25px;
-    
-    
+
+
 }
 
 
@@ -48,7 +53,7 @@ mat-card-title {
     font-size: 1.2rem;
     align-content: center;
 
-    
+
 }
 
 img {
@@ -65,7 +70,7 @@ img {
     height: 600px;
     background-color: black;
     border: 5px solid white;
-    
+
 }
 
 mat-card-content {
@@ -89,15 +94,15 @@ form {
    align-items: center;
    width:65%;
    margin: 4rem auto;
-  
+
     justify-content: center;
-  
+
     background-color: rgba(240, 248, 255, 0.797);
     border-radius: 20px;
     float: left;
     padding: 5%;
     margin-top: 5%;
-    
+
   }
 
   mat-form-field  {
@@ -107,21 +112,21 @@ form {
   }
   button{
       margin: 0 40%;
-    
+
     text-align: center;
   }
 
   .modify button {
-      
+
       height: 50px;
       width: 100%;
   }
 
   .modify h1 {
-      
+
    margin-bottom: 0;
 }
-  
+
 
 
 
