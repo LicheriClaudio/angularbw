@@ -132,17 +132,35 @@
       "lastname": "Migliorini",
       "role": "user",
       "id": 15
+    },
+    {
+      "email": "rodolfo@gmail.com",
+      "password": "$2a$10$0EPmWF9c9e1rMSq/MwcR2usA8T7l3mT4rsQuL8R.6UqVcEKsAtuFa",
+      "username": "Rodolfo83",
+      "firstname": "Rodolfo",
+      "lastname": "Tozzi",
+      "role": "admin",
+      "id": 16
     }
   ],
   "fatture": [
     {
-      "anno": 1,
-      "cliente": "Voluptatibus omnis d",
-      "data": "Aspernatur sed moles",
-      "importo": null,
-      "numero": null,
-      "stato": "Veniam delectus qu",
+      "anno": "2021",
+      "cliente": "Pasquale Esposito",
+      "data": "2 gennaio 2021",
+      "importo": "500",
+      "numero": "1",
+      "stato": "pagata",
       "id": 1
+    },
+    {
+      "anno": 2017,
+      "cliente": "Emilio Scipioni",
+      "data": "2 maggio 2017",
+      "importo": 3000,
+      "numero": 2,
+      "stato": "pagata",
+      "id": 2
     }
   ],
   "aziende": [
