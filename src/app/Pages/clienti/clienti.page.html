@@ -58,7 +58,7 @@
                     <input matInput type="text" formControlName="nomeContatto" class="form-control" placeholder="Insert Nome" required>
                     <span class="text-danger" *ngIf="ClientRegisterFormGroup.controls['nomeContatto'].dirty && ClientRegisterFormGroup.hasError('required', 'nomeContatto')">*L'username è obbligatorio!</span>
                   </mat-form-field>
-                  <button mat-button color="accent" [disabled]="!ClientRegisterFormGroup.valid" type="submit" style="width : 10em; height: 3em;">Submit</button>
+                  <button mat-button color="accent" [disabled]="!ClientRegisterFormGroup.valid" type="submit" style="width : 10em; height: 3em;">Modify</button>
                   <button mat-button (click)="close()">Close</button>
                 </div>
 

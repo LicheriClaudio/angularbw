@@ -117,6 +117,7 @@ modify() {
         emailAziendale: this.form.value.emailAziendale,
         nomeContatto:this.form.value.nomeContatto,
         telefono: this.form.value.telefono
+        
     }, {
         headers: new HttpHeaders({ "Authorization": "Bearer " + userLogin?.AccessToken})})
         .subscribe(
